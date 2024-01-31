@@ -1,0 +1,1 @@
+function Iniciar_simulacion(){}
