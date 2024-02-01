@@ -81,17 +81,29 @@ button{
     left: 55%;
 }
 .aire{
-    background: #d9d9df;
+    background: #d9d9f8;
     width: 100px;
     height: 300px;
     position: absolute;
     top: 10%;
     left: 80%;
-    border: 2px solid black;
-    border-radius: 50px;
     display: flex;
     justify-content: center;
+    align-items: center;
     font-family: 'Helveticah' , Arial;
+    border: 2px solid black;
+    border-start-start-radius: 15px;
+    border-start-end-radius: 15px;
+    border-end-start-radius: 40% 10px;
+    border-end-end-radius:40% 10px;
+}
+.aire::before{
+    content: "";
+    background: black;
+    width: 30px;
+    height: 10px;
+    position: absolute;
+    top: -10px;
 }
 .contenedor{
     background: transparent;
@@ -109,8 +121,22 @@ button{
     top: 0px;
     left: 0px;
     border: 5px solid #c9c2c2;
-    border-end-start-radius: 30% 20%;
-    border-end-end-radius: 30% 20%;
+    border-end-start-radius: 60px 50px;
+    border-end-end-radius: 60px 50px;
+}
+.liquido{
+    content: "";
+    background: #a1a14aa8;
+    width: 200px;
+    height: 220px;
+    position: absolute;
+    top: 30px;
+    left: 0px;
+    border-left: 5px solid #c9c2c2;
+    border-right: 5px solid #c9c2c2;
+    border-bottom: 5px solid #c9c2c2;
+    border-end-start-radius: 60px 50px;
+    border-end-end-radius: 60px 50px;
 }
 .contenedor2{
     background: transparent;
@@ -153,11 +179,27 @@ button{
     top: 0px;
     left: 0px;
     border: 2px solid black;
-    border-radius: 5px;
+    border-radius: 10px;
     display: flex;
     justify-content: center;
+    align-items: center;
     font-family: 'Helveticah' , Arial;
-
+}
+.acido::after{
+    content: "";
+    background: black;
+    width: 30px;
+    height: 10px;
+    position: absolute;
+    top: -10px;
+}
+.acido::before{
+    content: "";
+    background: black;
+    width: 20px;
+    height: 5px;
+    position: absolute;
+    top: -15px;
 }
 .base{
     background: #7c7cec;
@@ -167,28 +209,46 @@ button{
     top: 0px;
     left: 90px;
     border: 2px solid black;
-    border-radius: 5px;
+    border-radius: 10px;
     display: flex;
     justify-content: center;
+    align-items: center;
     font-family: 'Helveticah' , Arial;
 }
-
+.base::after{
+    content: "";
+    background: black;
+    width: 30px;
+    height: 10px;
+    position: absolute;
+    top: -10px;
+}
+.base::before{
+    content: "";
+    background: black;
+    width: 20px;
+    height: 5px;
+    position: absolute;
+    top: -15px;
+}
 .sistema_de_agitacion{
-    background: transparent;
+    background: blue;
     width: 120px;
     height: 200px;
     position: absolute;
     top: 10px;
     left: 80px;
+    display: flex;
+    justify-content: center;
 }
 .pala_central{
     background: black;
     width: 15px;
-    height: 200px;
+    height: 250px;
     position: absolute;
-    top: 0px;
-    left: 50px;
+    top: -50px;
 }
+
 .pala1{
     background: black;
     width: 120px;
@@ -209,4 +269,20 @@ button{
     height: 15px;
     position: absolute;
     top: 160px;
+}
+.motor{
+    background: #f18238;
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: 9px;
+}
+
+@keyframes rotar{
+    from{
+        transform: rotateY(0deg);
+    }
+    to{
+        transform: rotateY(360deg);
+    }
 }
