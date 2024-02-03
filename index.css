@@ -6,7 +6,51 @@
 body{
     background: #89a88569;
 }
-button{
+ul {
+    list-style: none;
+    padding: -20px;
+    margin: 0;
+}
+  
+form li + li {
+    margin-top: 5px;
+}
+label {
+    display: inline-block;
+    width: 300px;
+    text-align: right;
+}
+form {
+    margin: 0 auto;
+    width: 100%;
+    height: 100%;
+    padding: 1em;
+    font-family: 'Helveticah' , Arial;
+    font-size: 14px;
+    top:50px;
+  }
+input{
+    background: #f0e9e9;
+    font-family: 'Helveticah' , Arial;
+    padding-block: 5px;
+    padding-inline: 5px;
+    height: 20px;
+    width: 50px;
+    border-radius: 5px;
+    justify-content: left;
+    align-items: center;
+}
+
+.bt{
+    background: #f0f1ef;
+    font-family: 'Helveticah' , Arial;
+    padding-block: 2px;
+    padding-inline: 2px;
+    width: 100px;
+    top: 400px;
+    justify-content: center;
+}
+.b_simulacion{
     background: #dce688;
     width: 200px;
     height: 50px;
@@ -15,7 +59,6 @@ button{
     border-end-start-radius: 5% 10%;
     border-end-end-radius: 5% 10%;
     position: absolute;
-    top: 80%;
 }
 .encabezado{
     background: #2ec5be;
@@ -28,15 +71,41 @@ button{
     padding-left: 20px;
     padding-top: 25px;
 }
+.nombre_pag{
+    background: rgb(240, 215, 182);
+    font-family: 'Helveticah' , Arial;
+    font-size: medium;
+    color: #1b0f0f;
+    display: flex;
+    justify-content: center;
+    padding-block: 10px;
+    padding-inline: 10px;
+    position: absolute;
+    top: 10px;
+    border-radius: 10px;
+}
 .simulacion{
     background: white;
     color: #1b0f0f;
     width: 90%;
-    height: 100%;
+    height: 110%;
     display: flex;
     position: absolute;
     top: 15%;
     left: 5%;
+    justify-content: center;
+    border-start-start-radius: 3% 5%;
+    border-start-end-radius: 3% 5%;
+    justify-content: center;
+    align-items: center;
+}
+.cubierta_simulacion{
+    background: rgb(201, 188, 188);
+    color: #1b0f0f;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    position: absolute;
     justify-content: center;
     border-start-start-radius: 3% 5%;
     border-start-end-radius: 3% 5%;
@@ -54,12 +123,98 @@ button{
     justify-content: center;
     align-items: center;
 }
-.monitor{
+.monitor1{
     background: #f0e088;
+    /* width: 250px; */
     width: 250px;
-    height: 160px;
+    height: 150px;
     position: absolute;
-    top: 5%;
+    top: 60px;
+    /* left: 50%; */
+    border: 5px solid #e48b17;
+    border-start-start-radius: 5% 10%;
+    border-start-end-radius: 5% 10%;
+    border-end-start-radius: 5% 10%;
+    border-end-end-radius: 5% 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.monitor2{
+    background: #f0e088;
+    /* width: 250px; */
+    width: 250px;
+    height: 150px;
+    position: absolute;
+    top: 60px;
+    /* left: 50%; */
+    border: 5px solid #e48b17;
+    border-start-start-radius: 5% 10%;
+    border-start-end-radius: 5% 10%;
+    border-end-start-radius: 5% 10%;
+    border-end-end-radius: 5% 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.monitor3{
+    background: #f0e088;
+    /* width: 250px; */
+    width: 250px;
+    height: 150px;
+    position: absolute;
+    top: 60px;
+    /* left: 50%; */
+    border: 5px solid #e48b17;
+    border-start-start-radius: 5% 10%;
+    border-start-end-radius: 5% 10%;
+    border-end-start-radius: 5% 10%;
+    border-end-end-radius: 5% 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.monitor4{
+    background: #f0e088;
+    /* width: 250px; */
+    width: 250px;
+    height: 150px;
+    position: absolute;
+    top: 60px;
+    /* left: 50%; */
+    border: 5px solid #e48b17;
+    border-start-start-radius: 5% 10%;
+    border-start-end-radius: 5% 10%;
+    border-end-start-radius: 5% 10%;
+    border-end-end-radius: 5% 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.monitor5{
+    background: #f0e088;
+    /* width: 250px; */
+    width: 250px;
+    height: 150px;
+    position: absolute;
+    top: 60px;
+    /* left: 50%; */
+    border: 5px solid #e48b17;
+    border-start-start-radius: 5% 10%;
+    border-start-end-radius: 5% 10%;
+    border-end-start-radius: 5% 10%;
+    border-end-end-radius: 5% 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.monitor6{
+    background: #f0e088;
+    /* width: 250px; */
+    width: 250px;
+    height: 150px;
+    position: absolute;
+    top: 60px;
     /* left: 50%; */
     border: 5px solid #e48b17;
     border-start-start-radius: 5% 10%;

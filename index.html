@@ -8,8 +8,87 @@
 </head>
 <body>
 
-    <div class="encabezado"><h1>SIMULADOR DE UN BIOREACTOR</h1></div>
+    <div class="encabezado"><h1>SIMULADOR DE UN BIORREACTOR</h1></div>
     <div class="simulacion">
+        <h2 class="nombre_pag">SISTEMA DE CONTROL DE VELOCIDAD</h2>
+        <div class="monitor1">
+            <form onsubmit="alert('submit!');return false">
+                <ul>
+                <li>Velocidad mínima:<input type="text" name="vel_i" value="0"></li>
+                <li>Velocidad máxima:<input type="text" name="vel_s" value="0"></li>
+                <li>Velocidad actual:<input type="text" name="vel_a" value="0"></li>
+                <li><input class="bt" type="button" value="Ingresar datos" onclick="env_vel();"></li>
+                <li><input class="bt" type="button" value="Siguiente" onclick="ir_pagina(2,'avance');"></li>
+                </ul>
+            </form>
+        </div>
+        <div class="monitor2">
+            <form onsubmit="alert('submit!');return false">
+                <ul>
+                <li>Velocidad mínima:<input type="text" name="vel_i" value="0"></li>
+                <li>Velocidad máxima:<input type="text" name="vel_s" value="0"></li>
+                <li>Velocidad actual:<input type="text" name="vel_a" value="0"></li>
+                <li><input class="bt" type="button" value="Ingresar datos" onclick="env_vel();"></li>
+                <li>
+                    <input class="bt" type="button" value="Atras" onclick="ir_pagina(1,'retroceso');">
+                    <input class="bt" type="button" value="Siguiente" onclick="ir_pagina(3,'avance');">
+                </li>
+                </ul>
+            </form>
+        </div>
+        <div class="monitor3">
+            <form onsubmit="alert('submit!');return false">
+                <ul>
+                <li>Velocidad mínima:<input type="text" name="vel_i" value="0"></li>
+                <li>Velocidad máxima:<input type="text" name="vel_s" value="0"></li>
+                <li>Velocidad actual:<input type="text" name="vel_a" value="0"></li>
+                <li><input class="bt" type="button" value="Ingresar datos" onclick="env_vel();"></li>
+                <li>
+                    <input class="bt" type="button" value="Atras" onclick="ir_pagina(2,'retroceso');">
+                    <input class="bt" type="button" value="Siguiente" onclick="ir_pagina(4,'avance');">
+                </li>
+                </ul>
+            </form>
+        </div>
+        <div class="monitor4">
+            <form onsubmit="alert('submit!');return false">
+                <ul>
+                <li>Velocidad mínima:<input type="text" name="vel_i" value="0"></li>
+                <li>Velocidad máxima:<input type="text" name="vel_s" value="0"></li>
+                <li>Velocidad actual:<input type="text" name="vel_a" value="0"></li>
+                <li><input class="bt" type="button" value="Ingresar datos" onclick="env_vel();"></li>
+                <li>
+                    <input class="bt" type="button" value="Atras" onclick="ir_pagina(3,'retroceso');">
+                    <input class="bt" type="button" value="Siguiente" onclick="ir_pagina(5,'avance');">
+                </li>
+                </ul>
+            </form>
+        </div>
+        <div class="monitor5">
+            <form onsubmit="alert('submit!');return false">
+                <ul>
+                <li>Velocidad mínima:<input type="text" name="vel_i" value="0"></li>
+                <li>Velocidad máxima:<input type="text" name="vel_s" value="0"></li>
+                <li>Velocidad actual:<input type="text" name="vel_a" value="0"></li>
+                <li><input class="bt" type="button" value="Ingresar datos" onclick="env_vel();"></li>
+                <li>
+                    <input class="bt" type="button" value="Atras" onclick="ir_pagina(4,'retroceso');">
+                    <input class="bt" type="button" value="Siguiente" onclick="ir_pagina(6,'avance');">
+                </li>
+                </ul>
+            </form>
+        </div>
+        <div class="monitor6">
+            <form onsubmit="alert('submit!');return false">
+                <ul>
+                <li>Velocidad mínima:<input type="text" name="vel_i" value="0"></li>
+                <li>Velocidad máxima:<input type="text" name="vel_s" value="0"></li>
+                <li>Velocidad actual:<input type="text" name="vel_a" value="0"></li>
+                <li><input class="bt" type="button" value="Ingresar datos" onclick="env_vel();"></li>
+                <li><input class="bt" type="button" value="Atras" onclick="ir_pagina(5,'retroceso');"></li>
+                </ul>
+            </form>
+        </div>
         <div class="biorreactor">
             <div class="contenedor">
                 <div class="contenedor2"></div>
@@ -41,9 +120,6 @@
                 </div>
             </div>
             <div class="filtro"></div>
-            <div class="filtro">
-                <div class=""conducto_filtro></div>
-            </div>
             <div class="tapa">
                 <div class="tapa1"></div>
                 <div class="tapa2"></div>
@@ -51,12 +127,6 @@
         </div>
         <div class="aire">AIRE</div>
         <div class="agua"></div>
-        <div class="monitor">
-            <ul>
-            <div>Velocidad actual</div>
-            <div class="entradas"><input type="float"></div>
-            </ul>
-        </div>
         <div class="recipientes">
             <div class="acido">ÁCIDO</div>
             <div class="base">BASE</div>
@@ -65,7 +135,8 @@
         <div class="rotometro">
             <div class="indicador_rotometro"></div>
         </div>
-        <button onclick="iniciar_simulacion()">INICIAR LA SIMULACIÓN</button>
+        <div class="cubierta_simulacion"></div>
+        <button class="b_simulacion" onclick="iniciar_simulacion()">INICIAR LA SIMULACIÓN</button>
     </div>
 </body>
 <script src="index.js"></script>
