@@ -40,23 +40,27 @@ button{
     justify-content: center;
     border-start-start-radius: 3% 5%;
     border-start-end-radius: 3% 5%;
+    justify-content: center;
+    align-items: center;
 }
 .biorreactor{
     background: transparent;
     width: 280px;
     height: 305px;
     position: absolute;
-    top: 30%;
-    left: 10%;
-    /* scale: 50%; */
+    top: 45%;
+    /* left: 10%; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .monitor{
     background: #f0e088;
     width: 250px;
     height: 160px;
     position: absolute;
-    top: 10%;
-    left: 50%;
+    top: 5%;
+    /* left: 50%; */
     border: 5px solid #e48b17;
     border-start-start-radius: 5% 10%;
     border-start-end-radius: 5% 10%;
@@ -64,10 +68,11 @@ button{
     border-end-end-radius: 5% 10%;
     display: flex;
     justify-content: center;
+    align-items: center;
 }
 .recipientes{
     background: transparent;
-    width: 150px;
+    width: 240px;
     height: 80px;
     position: absolute;
     top: 50%;
@@ -113,6 +118,8 @@ button{
     position: absolute;
     top: 5px;
     left: 40px;
+    display: flex;
+    justify-content: center;
 }
 .contenedor1{
     background: white;
@@ -121,23 +128,32 @@ button{
     position: absolute;
     top: 0px;
     left: 0px;
-    border: 5px solid #c9c2c2;
+    border: 5px solid #888080;
     border-end-start-radius: 60px 50px;
     border-end-end-radius: 60px 50px;
 }
 .liquido{
-    content: "";
-    background: #a1a14aa8;
+    background: #a0a062a8;
     width: 200px;
-    height: 220px;
+    height: 200px;
     position: absolute;
-    top: 30px;
+    top: 50px;
     left: 0px;
-    border-left: 5px solid #c9c2c2;
-    border-right: 5px solid #c9c2c2;
-    border-bottom: 5px solid #c9c2c2;
+    border-left: 5px solid #888080;
+    border-right: 5px solid #888080;
+    border-bottom: 5px solid #888080;
     border-end-start-radius: 60px 50px;
     border-end-end-radius: 60px 50px;
+}
+.chaquetas{
+    background: transparent;
+    width: 190px;
+    height: 150px;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    border-left: 7px solid #000000;
+    border-right: 7px solid #000000;
 }
 .contenedor2{
     background: transparent;
@@ -146,7 +162,7 @@ button{
     position: absolute;
     top: 40px;
     left: -25px;
-    border: 5px solid #c9c2c2;
+    border: 5px solid #888080;
     border-end-start-radius: 50% 12%;
     border-end-end-radius: 50% 12%;
 }
@@ -163,6 +179,7 @@ button{
     position: absolute;
     top: 0px;
     left: 0px;
+    border: 1px solid black;
 }
 .tapa2{
     background: #8a8ae4;
@@ -171,6 +188,7 @@ button{
     position: absolute;
     top: 5px;
     left: 20px;
+    border: 1px solid black;
 }
 .acido{
     background: #f36565;
@@ -232,10 +250,40 @@ button{
     position: absolute;
     top: -15px;
 }
+.antiespumante{
+    background: #7c7cec;
+    width: 60px;
+    height: 80px;
+    position: absolute;
+    top: 0px;
+    left: 180px;
+    border: 2px solid black;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Helveticah' , Arial;
+}
+.antiespumante::after{
+    content: "";
+    background: black;
+    width: 30px;
+    height: 10px;
+    position: absolute;
+    top: -10px;
+}
+.antiespumante::before{
+    content: "";
+    background: black;
+    width: 20px;
+    height: 5px;
+    position: absolute;
+    top: -15px;
+}
 .rotometro{
     background: #89c1c457;
     width: 20px;
-    height: 70px;
+    height: 90px;
     position: absolute;
     top: 50px;
     left: 50px;
@@ -248,48 +296,201 @@ button{
 .rotometro::before{
     content: "";
     background: #89c1c4;;
-    width: 4px;
-    height: 45px;
+    width: 6px;
+    height: 60px;
     position: absolute;
     border: 2px solid black;
+    border-radius: 8px;
 }
-.sistema_de_agitacion{
-    background: transparent;
-    width: 120px;
-    height: 200px;
+.rotometro::after{
+    content: "";
+    background: #ff0000;
+    width: 10px;
+    height: 5px;
     position: absolute;
-    top: 10px;
-    left: 80px;
+    border: 1px solid black;
+    border-radius: 3px;
+    top: 78px;
+}
+.indicador_rotometro{
+    background: #f19203;
+    width: 6px;
+    height: 6px;
+    position: absolute;
+    border: 1px solid black;
+    border-radius: 3px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.esparcidor{
+    background: white;
+    width: 105px;
+    height: 11px;
+    position: absolute;
+    border: 1px solid black;
+    border-radius: 5px;
+    top: 230px;
     display: flex;
     justify-content: center;
 }
+.esparcidor::before{
+    content: "";
+    background: transparent;
+    width: 20px;
+    height: 5px;
+    position: absolute;
+    border-left: 6px solid black;
+    border-right: 6px solid black;
+    top: 0px;
+}
+.esparcidor::after{
+    content: "";
+    background: transparent;
+    width: 70px;
+    height: 5px;
+    position: absolute;
+    border-left: 6px solid black;
+    border-right: 6px solid black;
+    top: 0px;
+}
+.conducto_aire{
+    background: white;
+    width: 8px;
+    height: 270px;
+    position: absolute;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+    top: -75px;
+    left: 175px;
+    display: flex;
+    justify-content: center;
+}
+.conducto_aire::before{
+    content: "";
+    background: white;
+    width: 7px;
+    height: 51px;
+    position: absolute;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+    top: 270px;
+    left: -8.5px;
+    display: flex;
+    justify-content: center;
+    rotate: 40deg;
+    translate: -8.7px -7.8px;
+}
+
+.sistema_de_agitacion{
+    background: transparent;
+    width: 100px;
+    height: 200px;
+    position: absolute;
+    top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 .pala_central{
-    background: black;
-    width: 15px;
+    background: #777272;
+    width: 8px;
     height: 250px;
+    position: absolute;
+    top: -50px;
+    border: 1px solid black;
+}
+.cubierta_pala_central{
+    background: rgb(119, 114, 114);
+    width: 6px;
+    height: 240px;
     position: absolute;
     top: -50px;
 }
 .pala1{
-    background: black;
-    width: 120px;
-    height: 15px;
+    background: #777272;
+    width: 100px;
+    height: 5px;
     position: absolute;
-    top: 80px;
+    top: 100px;
+    border: 1px solid black;
+    display: flex;
+    align-items: center;
+}
+.pala1::before{
+    content: "";
+    background: #777272;
+    width: 15px;
+    height: 15px;
+    border: 1px solid black;
+    position: absolute;
+    left: -1px;
+}
+.pala1::after{
+    content: "";
+    background: #777272;
+    width: 15px;
+    height: 15px;
+    border: 1px solid black;
+    position: absolute;
+    left: 82px;
 }
 .pala2{
-    background: black;
-    width: 120px;
-    height: 15px;
+    background: #777272;
+    width: 100px;
+    height: 5px;
     position: absolute;
-    top: 120px;
+    top: 135px;
+    border: 1px solid black;
+    display: flex;
+    align-items: center;
+}
+.pala2::before{
+    content: "";
+    background: #777272;
+    width: 15px;
+    height: 15px;
+    border: 1px solid black;
+    position: absolute;
+    left: -1px;
+}
+.pala2::after{
+    content: "";
+    background: #777272;
+    width: 15px;
+    height: 15px;
+    border: 1px solid black;
+    position: absolute;
+    left: 82px;
 }
 .pala3{
-    background: black;
-    width: 120px;
-    height: 15px;
+    background: #777272;
+    width: 100px;
+    height:5px;
     position: absolute;
-    top: 160px;
+    top: 170px;
+    border: 1px solid black;
+    display: flex;
+    align-items: center;
+}
+.pala3::before{
+    content: "";
+    background: #777272;
+    width: 15px;
+    height: 15px;
+    border: 1px solid black;
+    position: absolute;
+    left: -1px;
+}
+.pala3::after{
+    content: "";
+    background: #777272;
+    width: 15px;
+    height: 15px;
+    border: 1px solid black;
+    position: absolute;
+    left: 82px;
 }
 .motor{
     background: #f18238;
@@ -302,6 +503,7 @@ button{
     display: flex;
     justify-content: center;
     align-items: center;
+    scale:80%
 }
 .motor::before{
     content: "";
@@ -319,7 +521,7 @@ button{
 .motor::after{
     content: "";
     background: #8f8f8f;
-    width: 25px;
+    width: 20px;
     height: 5px;
     position: absolute;
     top: 48px;
@@ -390,7 +592,7 @@ button{
     height: 20px;
     position: absolute;
     top: -30px;
-    left: 45px;
+    left: 30px;
     border: 1px solid black;
     border-radius: 2px;
     display: flex;
@@ -404,9 +606,9 @@ button{
     height: 37px;
     position: absolute;
     top: 18px;
+    left: 60%;
     border-left: 1px solid black;
     border-right: 1px solid black;
-    border-bottom: 1px solid black;
 }
 .filtro::after{
     content: "";
@@ -415,9 +617,163 @@ button{
     height: 4px;
     position: absolute;
     left: -11px;
-    border-left: 1px solid black;
     border-top: 1px solid black;
     border-bottom: 1px solid black;
+}
+.sensor_ph{
+    background: #a3a3a3;
+    width: 5px;
+    height: 150px;
+    position: absolute;
+    top: -70px;
+    left: 28px;
+    border: 1px solid black;
+    border-radius: 2px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.sensor_ph::before{
+    content: "";
+    background: #4043e9;
+    width: 8px;
+    height: 50px;
+    position: absolute;
+    top: 10px;
+    border: 1px solid black;
+    border-radius: 2px;
+}
+.sensor_temperatura{
+    background: #a3a3a3;
+    width: 5px;
+    height: 150px;
+    position: absolute;
+    top: -70px;
+    left: 42px;
+    border: 1px solid black;
+    border-radius: 2px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.sensor_temperatura::before{
+    content: "";
+    background: #f53a0b;
+    width: 8px;
+    height: 50px;
+    position: absolute;
+    top: 10px;
+    border: 1px solid black;
+    border-radius: 2px;
+}
+.sensor_o2{
+    background: #a3a3a3;
+    width: 5px;
+    height: 150px;
+    position: absolute;
+    top: -70px;
+    left: 56px;
+    border: 1px solid black;
+    border-radius: 2px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.sensor_o2::before{
+    content: "";
+    background: #cd11f3;
+    width: 8px;
+    height: 50px;
+    position: absolute;
+    top: 10px;
+    border: 1px solid black;
+    border-radius: 2px;
+}
+.sensor_espuma{
+    background: #a3a3a3;
+    width: 5px;
+    height: 110px;
+    position: absolute;
+    top: -70px;
+    left: 70px;
+    border: 1px solid black;
+    border-radius: 2px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.sensor_espuma::before{
+    content: "";
+    background: #68be16;
+    width: 8px;
+    height: 50px;
+    position: absolute;
+    top: 10px;
+    border: 1px solid black;
+    border-radius: 2px;
+}
+.receptor_tuberias{
+    background: #a3a3a3;
+    width: 25px;
+    height: 26px;
+    position: absolute;
+    top: 45px;
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.receptor_tuberias::before{
+    content: "";
+    background: #a3a3a3;
+    width: 28px;
+    height: 5px;
+    position: absolute;
+    top: -1px;
+    border: 1px solid black;
+}
+.receptor_tuberias::after{
+    content: "";
+    background: #a3a3a3;
+    width: 28px;
+    height: 15px;
+    position: absolute;
+    top: 8px;
+    border: 1px solid black;
+}
+.conducto_acido_base{
+    background: #ffffff;
+    width: 18px;
+    height: 110px;
+    position: absolute;
+    top: -75px;
+    left: 132px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+}
+.conducto_acido_base::before{
+    content: "";
+    background: #ffffff;
+    width: 2px;
+    height: 110px;
+    position: absolute;
+    top: 0px;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+}
+.conducto_astiespumante{
+    content: "";
+    background: #ffffff;
+    width: 8px;
+    height: 110px;
+    position: absolute;
+    top: -75px;
+    left: 162px;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
 }
 @keyframes rotar{
     from{

@@ -14,39 +14,61 @@
             <div class="contenedor">
                 <div class="contenedor2"></div>
                 <div class="contenedor1"></div>
-                <div class="liquido"></div>
-                <div class="chaqueta"></div>
+                <div class="liquido">
+                    <div class="chaquetas"></div>
+                </div>
+                <!-- sensores -->
+                <div class="sensor_ph"></div>
+                <div class="sensor_temperatura"></div>
+                <div class="sensor_o2"></div>
+                <div class="sensor_espuma"></div>
+                <div class="conducto_acido_base">
+                    <div class="receptor_tuberias"></div>
+                </div>
+                <div class="conducto_astiespumante"></div>
+                <!-- esparcidor de aire -->
+                <div class="conducto_aire"></div>
+                <div class="esparcidor"></div>
             </div>
             <div class="sistema_de_agitacion">
                 <div class="pala_central"></div>
                 <div class="pala1"></div>
                 <div class="pala2"></div>
                 <div class="pala3"></div>
+                <div class="cubierta_pala_central"></div>
                 <div class="motor">
                     <div class="rayas_motor"></div>
                 </div>
-            </div>
-            <div class="tapa">
-                <div class="tapa1"></div>
-                <div class="tapa2"></div>
             </div>
             <div class="filtro"></div>
             <div class="filtro">
                 <div class=""conducto_filtro></div>
             </div>
+            <div class="tapa">
+                <div class="tapa1"></div>
+                <div class="tapa2"></div>
+            </div>
         </div>
         <div class="aire">AIRE</div>
         <div class="agua"></div>
         <div class="monitor">
+            <ul>
+            <div>Limite inferior de la velocidad</div>
             <div class="entradas"><input type="float"></div>
+            <div>Limite superior de la velocidad</div>
             <div class="entradas"><input type="float"></div>
+            <div>Velocidad actual</div>
+            <div class="entradas"><input type="float"></div>
+            </ul>
         </div>
         <div class="recipientes">
             <div class="acido">ÁCIDO</div>
             <div class="base">BASE</div>
+            <div class="antiespumante">ANTI-ESPUMANTE</div>
         </div>
-        <div class="rotometro"></div>
-        <div class="rotometro"></div>
+        <div class="rotometro">
+            <div class="indicador_rotometro"></div>
+        </div>
         <button onclick="iniciar_simulacion()">INICIAR LA SIMULACIÓN</button>
     </div>
 </body>
