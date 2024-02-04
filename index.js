@@ -110,12 +110,14 @@ function ir_pagina(num, tipo){
     if (num == 1){;} 
     else if (num == 2){esparcidor.style.display = '';conducto_aire.style.display = '';
                         aire.style.display = ''; rotometro.style.display = '';}
-    else if (num == 3){sensor_temperatura.style.display = ''; agua.style.display = '';
+    else if (num == 3){
+                        sensor_temperatura.style.display = ''; agua.style.display = '';
                         receptor_tuberias.style.display = '';}
     else if (num == 4){sensor_ph.style.display = ''; receptor_tuberias.style.display = '';
                         conducto_acido_base.style.display = ''; recipientes.style.display = '';}
     else if (num == 5){sensor_o2.style.display = '';}
-    else if (num == 6){sensor_espuma.style.display = '';antiespumante.style.display = '';}
+    else if (num == 6){sensor_espuma.style.display = '';antiespumante.style.display = '';
+                        conducto_astiespumante.style.display = '';}
 
 }
 

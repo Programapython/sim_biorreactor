@@ -24,6 +24,7 @@
             </form>
         </div>
         <div class="monitor2">
+            <div class="bornera2"><div class="conector2"></div></div>
             <form onsubmit="alert('submit!');return false">
                 <ul>
                     <li>Velocidad del aire:<input type="text" name="vel_aire" value="0"></li>
@@ -36,6 +37,9 @@
             </form>
         </div>
         <div class="monitor3">
+            <div class="bornera3"><div class="conector3"></div></div>
+            <div class="bornera31"><div class="conector31"></div></div>
+            <div class="bornera32"><div class="conector32"></div></div>
             <form onsubmit="alert('submit!');return false">
                 <ul>
                     <li>Valor deseado:<input type="text" name="vel_s" value="0"></li>
@@ -49,6 +53,20 @@
             </form>
         </div>
         <div class="monitor4">
+            <div class="bornera3"><div class="conector3"></div></div>
+            <div class="bornera31"><div class="conector31"></div></div>
+            <div class="bornera4"><div class="conector4"></div></div>
+            <div class="bornera32"><div class="conector32"></div></div>
+
+            <div class="regulador_acido">
+                <div class="indicador_acido"></div>
+                <div class="borneraAcido"><div class="conectorAcido"></div></div>
+            </div>
+            <div class="regulador_base">
+                <div class="indicador_base"></div>
+                <div class="borneraBase"><div class="conectorBase"></div></div>
+            </div>
+
             <form onsubmit="alert('submit!');return false">
                 <ul>
                     <li>Valor deseado:<input type="text" name="vel_s" value="0"></li>
@@ -62,6 +80,21 @@
             </form>
         </div>
         <div class="monitor5">
+            <div class="bornera3"><div class="conector3"></div></div>
+            <div class="bornera31"><div class="conector31"></div></div>
+            <div class="bornera32"><div class="conector32"></div></div>
+            <div class="bornera4"><div class="conector4"></div></div>
+            <div class="bornera5"><div class="conector5"></div></div>
+
+            <div class="regulador_acido">
+                <div class="indicador_acido"></div>
+                <div class="borneraAcido"><div class="conectorAcido"></div></div>
+            </div>
+            <div class="regulador_base">
+                <div class="indicador_base"></div>
+                <div class="borneraBase"><div class="conectorBase"></div></div>
+            </div>
+
             <form onsubmit="alert('submit!');return false">
                 <ul>
                     <li>Valor deseado:<input type="text" name="vel_s" value="0"></li>
@@ -75,11 +108,29 @@
             </form>
         </div>
         <div class="monitor6">
-            <form onsubmit="alert('submit!');return false">
-                <ul>
-                    <li><input class="bt" type="button" value="Atras" onclick="ir_pagina(5,'retroceso');"></li>
-                </ul>
-            </form>
+            <div class="bornera3"><div class="conector3"></div></div>
+            <div class="bornera31"><div class="conector31"></div></div>
+            <div class="bornera32"><div class="conector32"></div></div>
+            <div class="bornera4"><div class="conector4"></div></div>
+            <div class="bornera5"><div class="conector5"></div></div>
+            <div class="bornera6"><div class="conector6"></div></div>
+
+            <div class="regulador_antiespumante">
+                <div class="indicador_antiespumante"></div>
+                <div class="borneraAntiespumante"><div class="conectorAntiespumante"></div></div>
+            </div>
+            <div class="regulador_acido">
+                <div class="indicador_acido"></div>
+                <div class="borneraAcido"><div class="conectorAcido"></div></div>
+            </div>
+            <div class="regulador_base">
+                <div class="indicador_base"></div>
+                <div class="borneraBase"><div class="conectorBase"></div></div>
+            </div>
+            
+            <div>
+                <input class="bt" type="button" value="Atras" onclick="ir_pagina(5,'retroceso');">
+            </div>
         </div>
         <div class="biorreactor">
             <div class="contenedor">
@@ -117,12 +168,21 @@
                 <div class="tapa2"></div>
             </div>
         </div>
-        <div class="aire">AIRE</div>
-        <div class="agua"></div>
+        <div class="aire">
+            AIRE
+            <div class="tuberias_aire"></div>
+            <div class="aire_complementos"></div>
+        </div>
+        <div class="agua">
+            <div class="tuberias_agua1">
+                <div class="tuberias_agua11"></div>
+            </div>
+            <div class="tuberias_agua2"></div>
+        </div>
         <div class="recipientes">
             <div class="acido">ÁCIDO</div>
             <div class="base">BASE</div>
-            <div class="antiespumante">ANTI-ESPUMANTE</div>
+            <div class="antiespumante">ANTI ESPUMANTE</div>
         </div>
         <div class="rotometro">
             <div class="indicador_rotometro"></div>

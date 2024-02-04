@@ -116,7 +116,7 @@ input{
     width: 280px;
     height: 305px;
     position: absolute;
-    top: 45%;
+    top: 47%;
     /* left: 10%; */
     display: flex;
     justify-content: center;
@@ -136,8 +136,6 @@ input{
     border-bottom: 15px solid #e48b17;
     border-start-start-radius: 5% 10%;
     border-start-end-radius: 5% 10%;
-    border-end-start-radius: 5% 10%;
-    border-end-end-radius: 5% 10%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -146,15 +144,16 @@ input{
     background: #f0e088;
     /* width: 250px; */
     width: 250px;
-    height: 100px;
+    height: 130px;
     position: absolute;
     top: 60px;
     /* left: 50%; */
-    border: 5px solid #e48b17;
+    border-left: 5px solid #e48b17;
+    border-right: 5px solid #e48b17;
+    border-top: 5px solid #e48b17;
+    border-bottom: 30px solid #e48b17;
     border-start-start-radius: 5% 10%;
     border-start-end-radius: 5% 10%;
-    border-end-start-radius: 5% 10%;
-    border-end-end-radius: 5% 10%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -163,15 +162,16 @@ input{
     background: #f0e088;
     /* width: 250px; */
     width: 250px;
-    height: 130px;
+    height: 170px;
     position: absolute;
     top: 60px;
     /* left: 50%; */
-    border: 5px solid #e48b17;
+    border-left: 5px solid #e48b17;
+    border-right: 5px solid #e48b17;
+    border-top: 5px solid #e48b17;
+    border-bottom: 40px solid #e48b17;
     border-start-start-radius: 5% 10%;
     border-start-end-radius: 5% 10%;
-    border-end-start-radius: 5% 10%;
-    border-end-end-radius: 5% 10%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -180,15 +180,16 @@ input{
     background: #f0e088;
     /* width: 250px; */
     width: 250px;
-    height: 130px;;
+    height: 170px;;
     position: absolute;
     top: 60px;
     /* left: 50%; */
-    border: 5px solid #e48b17;
+    border-left: 5px solid #e48b17;
+    border-right: 5px solid #e48b17;
+    border-top: 5px solid #e48b17;
+    border-bottom: 40px solid #e48b17;
     border-start-start-radius: 5% 10%;
     border-start-end-radius: 5% 10%;
-    border-end-start-radius: 5% 10%;
-    border-end-end-radius: 5% 10%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -197,15 +198,16 @@ input{
     background: #f0e088;
     /* width: 250px; */
     width: 250px;
-    height: 130px;;
+    height: 170px;;
     position: absolute;
     top: 60px;
     /* left: 50%; */
-    border: 5px solid #e48b17;
+    border-left: 5px solid #e48b17;
+    border-right: 5px solid #e48b17;
+    border-top: 5px solid #e48b17;
+    border-bottom: 40px solid #e48b17;
     border-start-start-radius: 5% 10%;
     border-start-end-radius: 5% 10%;
-    border-end-start-radius: 5% 10%;
-    border-end-end-radius: 5% 10%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -213,16 +215,17 @@ input{
 .monitor6{
     background: #f0e088;
     /* width: 250px; */
-    width: 500px;
-    height: 80px;
+    width: 250px;
+    height: 170px;;
     position: absolute;
     top: 60px;
     /* left: 50%; */
-    border: 5px solid #e48b17;
+    border-left: 5px solid #e48b17;
+    border-right: 5px solid #e48b17;
+    border-top: 5px solid #e48b17;
+    border-bottom: 40px solid #e48b17;
     border-start-start-radius: 5% 10%;
     border-start-end-radius: 5% 10%;
-    border-end-start-radius: 5% 10%;
-    border-end-end-radius: 5% 10%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -232,8 +235,8 @@ input{
     width: 240px;
     height: 80px;
     position: absolute;
-    top: 50%;
-    left: 55%;
+    top: 540px;
+    left: 770px;
 }
 .recipientes::after{
     background: #2ec5be;
@@ -246,27 +249,61 @@ input{
 .aire{
     background: #d9d9f8;
     width: 100px;
-    height: 300px;
-    position: absolute;
-    top: 10%;
-    left: 80%;
+    height: 320px;
+    position: relative;
+    top: 92px;
+    left: -350px;
     display: flex;
     justify-content: center;
     align-items: center;
     font-family: 'Helveticah' , Arial;
     border: 2px solid black;
-    border-start-start-radius: 15px;
-    border-start-end-radius: 15px;
+    border-start-start-radius: 35px;
+    border-start-end-radius: 35px;
     border-end-start-radius: 40% 10px;
     border-end-end-radius:40% 10px;
 }
 .aire::before{
     content: "";
-    background: black;
-    width: 30px;
-    height: 10px;
+    background: rgb(136, 132, 132);
+    width: 4px;
+    height:45px;
     position: absolute;
-    top: -10px;
+    border: 1px solid black;
+    top: -48px;
+}
+.aire::after{
+    content: "";
+    background: #888484;
+    width: 20px;
+    height:5px;
+    position: absolute;
+    border: 1px solid black;
+    border-radius: 2px;
+    top: -50px;
+}
+.aire_complementos{
+    background: #bbb0b0;
+    width: 40px;
+    height: 17px;
+    position: absolute;
+    top: -18px;
+    border: 1px solid black;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    display: flex;
+    justify-content: center;
+}
+.aire_complementos::after{
+    content: "";
+    background: #bbb0b0;
+    width: 20px;
+    height: 16px;
+    position: absolute;
+    top: -18px;
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;  
 }
 .contenedor{
     background: transparent;
@@ -315,7 +352,7 @@ input{
 .contenedor2{
     background: transparent;
     width: 250px;
-    height: 260px;
+    height: 240px;
     position: absolute;
     top: 40px;
     left: -25px;
@@ -408,7 +445,7 @@ input{
     top: -15px;
 }
 .antiespumante{
-    background: #7c7cec;
+    background: #60e672;
     width: 60px;
     height: 80px;
     position: absolute;
@@ -420,6 +457,7 @@ input{
     justify-content: center;
     align-items: center;
     font-family: 'Helveticah' , Arial;
+    font-size: 6px;
 }
 .antiespumante::after{
     content: "";
@@ -438,17 +476,18 @@ input{
     top: -15px;
 }
 .rotometro{
-    background: #89c1c457;
+    background: #89c1c4;
     width: 20px;
     height: 90px;
     position: absolute;
-    top: 50px;
-    left: 50px;
+    top: 175px;
+    left: 400px;
     border: 1px solid black;
     border-radius: 2px;
     display: flex;
     justify-content: center;
     align-items: center;
+    scale: 120%;
 }
 .rotometro::before{
     content: "";
@@ -473,6 +512,7 @@ input{
     background: #f19203;
     width: 6px;
     height: 6px;
+    top: 68px;
     position: absolute;
     border: 1px solid black;
     border-radius: 3px;
@@ -519,10 +559,17 @@ input{
     position: absolute;
     border-left: 1px solid black;
     border-right: 1px solid black;
+    border-top: 1px solid black;
     top: -75px;
-    left: 175px;
+    left: 14px;
     display: flex;
     justify-content: center;
+    -moz-transform: scaleX(-1);
+    -o-transform: scaleX(-1);
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+    -ms-filter: "FlipH";
+    filter: FlipH;
 }
 .conducto_aire::before{
     content: "";
@@ -538,6 +585,19 @@ input{
     justify-content: center;
     rotate: 40deg;
     translate: -8.7px -7.8px;
+}
+.tuberias_aire{
+    background: white;
+    width: 255px;
+    height: 8px;
+    position: absolute;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    border-left: 1px solid black;
+    top: -25px;
+    left: 58px;
+    display: flex;
+    justify-content: center;
 }
 
 .sistema_de_agitacion{
@@ -717,12 +777,12 @@ input{
 .agua{
     background: #f36565;
     width: 95px;
-    height: 85px;
+    height: 89px;
     position: absolute;
     display: flex;
     justify-content: center;
-    top: 300px;
-    left: 500px;
+    top: 560px;
+    left: 370px;
     border: 2px solid black;
     border-radius: 10px;
 }
@@ -743,13 +803,102 @@ input{
     top: 55px;
     font-family: 'Helveticah' , Arial;
 }
+.tuberias_agua1{
+    background: white;
+    width: 290px;
+    height: 8px;
+    position: absolute;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    border-right: 1px solid black;
+    top: 65px;
+    left: 91px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.tuberias_agua1::after{
+    content: "";
+    background: rgb(138, 138, 138);
+    width: 10px;
+    height: 15px;
+    position: absolute;
+    border: 2px solid black;
+    left: 0px;
+    display: flex;
+    justify-content: center;
+}
+.tuberias_agua1::before{
+    content: "";
+    background: white;
+    width: 6px;
+    height: 170px;
+    position: absolute;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+    border-top: 1px solid black;
+    top: -171px;
+    left: 282px;
+    display: flex;
+    justify-content: center;
+}
+.tuberias_agua11{
+    background: rgb(255, 255, 255);
+    width: 19px;
+    height: 8px;
+    position: absolute;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    top: -171px;
+    left: 264px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.tuberias_agua2{
+    background: white;
+    width: 8px;
+    height: 170px;
+    position: absolute;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+    border-top: 1px solid black;
+    top: -170px;
+    display: flex;
+    justify-content: center;
+}
+.tuberias_agua2::before{
+    content: "";
+    background: rgb(138, 138, 138);
+    width: 20px;
+    height: 10px;
+    position: absolute;
+    border: 2px solid black;
+    top: 156px;
+    display: flex;
+    justify-content: center;
+}
+.tuberias_agua2::after{
+    content: "";
+    background: white;
+    width: 66px;
+    height: 6px;
+    position: absolute;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    top: -1px;
+    left: 6px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 .filtro{
     background: #89c1c457;
     width: 30px;
     height: 20px;
     position: absolute;
     top: -30px;
-    left: 30px;
+    left: 220px;
     border: 1px solid black;
     border-radius: 2px;
     display: flex;
@@ -763,17 +912,17 @@ input{
     height: 37px;
     position: absolute;
     top: 18px;
-    left: 60%;
+    left: 10%;
     border-left: 1px solid black;
     border-right: 1px solid black;
 }
 .filtro::after{
     content: "";
     background: #89c1c4;;
-    width: 10px;
+    width: 20px;
     height: 4px;
     position: absolute;
-    left: -11px;
+    left: 28px;
     border-top: 1px solid black;
     border-bottom: 1px solid black;
 }
@@ -871,10 +1020,10 @@ input{
 }
 .receptor_tuberias{
     background: #a3a3a3;
-    width: 25px;
+    width: 37px;
     height: 26px;
     position: absolute;
-    top: 45px;
+    top: 77px;
     border: 1px solid black;
     display: flex;
     justify-content: center;
@@ -883,7 +1032,7 @@ input{
 .receptor_tuberias::before{
     content: "";
     background: #a3a3a3;
-    width: 28px;
+    width: 40px;
     height: 5px;
     position: absolute;
     top: -1px;
@@ -892,7 +1041,7 @@ input{
 .receptor_tuberias::after{
     content: "";
     background: #a3a3a3;
-    width: 28px;
+    width: 40px;
     height: 15px;
     position: absolute;
     top: 8px;
@@ -900,11 +1049,11 @@ input{
 }
 .conducto_acido_base{
     background: #ffffff;
-    width: 18px;
-    height: 110px;
+    width: 31px;
+    height: 142px;
     position: absolute;
-    top: -75px;
-    left: 132px;
+    top: -107px;
+    left: 128px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -914,8 +1063,8 @@ input{
 .conducto_acido_base::before{
     content: "";
     background: #ffffff;
-    width: 2px;
-    height: 110px;
+    width: 7px;
+    height: 142px;
     position: absolute;
     top: 0px;
     border-left: 1px solid black;
@@ -925,12 +1074,107 @@ input{
     content: "";
     background: #ffffff;
     width: 8px;
-    height: 110px;
+    height: 142px;
     position: absolute;
-    top: -75px;
-    left: 162px;
+    top: -107px;
+    left: 168px;
     border-left: 1px solid black;
     border-right: 1px solid black;
+}
+
+.regulador_acido{
+    background: #e1eb57;
+    width: 20px;
+    height: 40px;
+    position: absolute;
+    top: 125px;
+    left: 145px;
+    border: 1px solid black;
+    border-radius: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.regulador_base{
+    background: #e1eb57;
+    width: 20px;
+    height: 40px;
+    position: absolute;
+    top: 125px;
+    left: 164px;
+    border: 1px solid black;
+    border-radius: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.regulador_antiespumante{
+    background: #e1eb57;
+    width: 20px;
+    height: 40px;
+    position: absolute;
+    top: 125px;
+    left: 183px;
+    border: 1px solid black;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.indicador_acido{
+    background: #aaad7c;
+    width: 15px;
+    height: 15px;
+    position: absolute;
+    border: 1px solid black;
+    border-radius: 7.5px;
+    top: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.indicador_acido::after{
+    content: "";
+    background: #000000;
+    width: 2px;
+    height: 14px;
+}
+.indicador_base{
+    background: #aaad7c;
+    width: 15px;
+    height: 15px;
+    position: absolute;
+    border: 1px solid black;
+    border-radius: 7.5px;
+    top: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.indicador_base::after{
+    content: "";
+    background: #000000;
+    width: 2px;
+    height: 14px;
+}
+.indicador_antiespumante{
+    background: #aaad7c;
+    width: 15px;
+    height: 15px;
+    position: absolute;
+    border: 1px solid black;
+    border-radius: 7.5px;
+    top: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.indicador_antiespumante::after{
+    content: "";
+    background: #000000;
+    width: 2px;
+    height: 14px;
 }
 
 .bornera1{
@@ -960,6 +1204,360 @@ input{
     position: absolute;
     top: 11px;
     border: 1px solid black;
+}
+
+.bornera2{
+    background: white;
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    top: 103px;
+    left: 10px;
+    border: 1px solid black;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.bornera2::before{
+    content: "";
+    background: black;
+    width: 5px;
+    height: 5px;
+    position: absolute;
+    border-radius: 2.5px;
+}
+.conector2{
+    background: transparent;
+    width: 62px;
+    height: 1px;
+    position: absolute;
+    left: -78px;
+    border: 1px solid black;
+}
+
+.bornera3{
+    background: white;
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    top: 148px;
+    left: 10px;
+    border: 1px solid black;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.bornera3::before{
+    content: "";
+    background: black;
+    width: 5px;
+    height: 5px;
+    position: absolute;
+    border-radius: 2.5px;
+}
+.conector3{
+    background: transparent;
+    width: 35px;
+    height: 1px;
+    position: absolute;
+    left: -50px;
+    border: 1px solid black;
+}
+.conector3::after{
+    content:"";
+    background: transparent;
+    width: 0px;
+    height: 400px;
+    position: absolute;
+    left: -1px;
+    border: 1px solid black;
+}
+
+.bornera31{
+    background: white;
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    top: 148px;
+    left: 59px;
+    border: 1px solid black;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.bornera31::before{
+    content: "";
+    background: black;
+    width: 5px;
+    height: 5px;
+    position: absolute;
+    border-radius: 2.5px;
+}
+.conector31{
+    background: transparent;
+    width: 1px;
+    height: 100px;
+    position: absolute;
+    top: 16px;
+    border: 1px solid black;
+}
+
+.bornera32{
+    background: white;
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    top: 132px;
+    left: 10px;
+    border: 1px solid black;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.bornera32::before{
+    content: "";
+    background: black;
+    width: 5px;
+    height: 5px;
+    position: absolute;
+    border-radius: 2.5px;
+}
+.conector32{
+    background: transparent;
+    width: 65px;
+    height: 1px;
+    position: absolute;
+    left: -80px;
+    border: 1px solid black;
+}
+
+.bornera4{
+    background: white;
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    top: 148px;
+    left: 46px;
+    border: 1px solid black;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.bornera4::before{
+    content: "";
+    background: black;
+    width: 5px;
+    height: 5px;
+    position: absolute;
+    border-radius: 2.5px;
+}
+.conector4{
+    background: transparent;
+    width: 1px;
+    height: 100px;
+    position: absolute;
+    top: 16px;
+    border: 1px solid black;
+}
+
+.bornera5{
+    background: white;
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    top: 148px;
+    left: 74px;
+    border: 1px solid black;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.bornera5::before{
+    content: "";
+    background: black;
+    width: 5px;
+    height: 5px;
+    position: absolute;
+    border-radius: 2.5px;
+}
+.conector5{
+    background: transparent;
+    width: 1px;
+    height: 100px;
+    position: absolute;
+    top: 16px;
+    border: 1px solid black;
+}
+
+.bornera6{
+    background: white;
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    top: 148px;
+    left: 88px;
+    border: 1px solid black;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.bornera6::before{
+    content: "";
+    background: black;
+    width: 5px;
+    height: 5px;
+    position: absolute;
+    border-radius: 2.5px;
+}
+.conector6{
+    background: transparent;
+    width: 1px;
+    height: 100px;
+    position: absolute;
+    top: 16px;
+    border: 1px solid black;
+}
+
+.borneraAcido{
+    background: white;
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    top: 3px;
+    border: 1px solid black;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.borneraAcido::before{
+    content: "";
+    background: black;
+    width: 5px;
+    height: 5px;
+    position: absolute;
+    border-radius: 2.5px;
+}
+.conectorAcido{
+    background: transparent;
+    width: 1px;
+    height: 8px;
+    position: absolute;
+    top: -13px;
+    border: 1px solid #f31010;
+}
+.conectorAcido::after{
+    content: "";
+    background: transparent;
+    width: 157px;
+    height: 0px;
+    position: absolute;
+    top: -1px;
+    border: 1px solid #f31010;
+}
+.conectorAcido::before{
+    content: "";
+    background: transparent;
+    width: 0px;
+    height: 400px;
+    position: absolute;
+    top: 0px;
+    left: 157px;
+    border: 1px solid #f31010;
+}
+
+.borneraBase{
+    background: white;
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    top: 3px;
+    border: 1px solid black;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.borneraBase::before{
+    content: "";
+    background: black;
+    width: 5px;
+    height: 5px;
+    position: absolute;
+    border-radius: 2.5px;
+}
+.conectorBase{
+    background: transparent;
+    width: 1px;
+    height: 3px;
+    position: absolute;
+    top: -8px;
+    border: 1px solid #001aff;
+}
+.conectorBase::after{
+    content: "";
+    background: transparent;
+    width: 228px;
+    height: 0px;
+    position: absolute;
+    top: -1px;
+    border: 1px solid #001aff;
+}
+.conectorBase::before{
+    content: "";
+    background: transparent;
+    width: 0px;
+    height: 400px;
+    position: absolute;
+    top: 0px;
+    left: 228px;
+    border: 1px solid #001aff;
+}
+
+.borneraAntiespumante{
+    background: white;
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    top: 3px;
+    border: 1px solid black;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.borneraAntiespumante::before{
+    content: "";
+    background: black;
+    width: 5px;
+    height: 5px;
+    position: absolute;
+    border-radius: 2.5px;
+}
+.conectorAntiespumante{
+    background: transparent;
+    width: 290px;
+    height: 0px;
+    position: absolute;
+    left: 14px;
+    border: 1px solid #2bff00;
+}
+.conectorAntiespumante::before{
+    content: "";
+    background: transparent;
+    width: 0px;
+    height: 400px;
+    position: absolute;
+    top: 0px;
+    left: 288px;
+    border: 1px solid #2bff00;
 }
 
 @keyframes rotar{
