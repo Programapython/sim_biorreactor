@@ -28,8 +28,8 @@ const conducto_aire = document.querySelector('.conducto_aire');
 const esparcidor = document.querySelector('.esparcidor');
 const sistema_de_agitacion = document.querySelector('.sistema_de_agitacion');
 const pala_central = document.querySelector('.pala_central');
-const pala1 = document.querySelector('.pala1');
-const pala2 = document.querySelector('.pala2');
+// const pala1 = document.querySelector('.pala1');
+// const pala2 = document.querySelector('.pala2');
 const pala3 = document.querySelector('.pala3');
 const cubierta_pala_central = document.querySelector('.cubierta_pala_central');
 const motor = document.querySelector('.motor');
@@ -55,8 +55,8 @@ function env_vel(){
     var vel_a = parseFloat(document.getElementsByName('vel_a')[0].value);
     var vel_paletas = 60/vel_a;
     if (vel_a>=vel_i && vel_a<=vel_s && vel_a>=0 && vel_i>=0 && vel_s>=0){
-        pala1.style.animation =`rotar ${vel_paletas}s linear infinite`;
-        pala2.style.animation = `rotar ${vel_paletas}s linear infinite`;
+        // pala1.style.animation =`rotar ${vel_paletas}s linear infinite`;
+        // pala2.style.animation = `rotar ${vel_paletas}s linear infinite`;
         pala3.style.animation = `rotar ${vel_paletas}s linear infinite`;
         console.log(vel_paletas)
     } else {
@@ -68,7 +68,6 @@ for (var i = 0; i < 6; i++){
     let monitor = monitores[i]; monitor.style.display = 'none';
 }
 
-filtro.style.display = 'none';
 sensor_ph.style.display = 'none';
 sensor_temperatura.style.display = 'none';
 sensor_o2.style.display = 'none';
@@ -79,11 +78,13 @@ conducto_astiespumante.style.display = 'none';
 conducto_aire.style.display = 'none';
 esparcidor.style.display = 'none';
 
+
 biorreactor.style.display = 'none';
 
 aire.style.display = 'none';
 
 recipientes.style.display = 'none';
+antiespumante.style.display = 'none';
 
 agua.style.display = 'none';
 
@@ -96,16 +97,25 @@ function iniciar_simulacion(){
     monitores[0].style.display = '';
     biorreactor.style.display = '';
 }
+
 function ir_pagina(num, tipo){
     monitores[num-1].style.display = '';
     nombre_pag.innerHTML = titulos[num-1]
     if (tipo == "retroceso"){
         monitores[num].style.display = 'none';
-        console.log(1);
     } else if (tipo == "avance"){
         monitores[num-2].style.display = 'none';
-        console.log(2);
     }
+
+    if (num == 1){;} 
+    else if (num == 2){esparcidor.style.display = '';conducto_aire.style.display = '';
+                        aire.style.display = ''; rotometro.style.display = '';}
+    else if (num == 3){sensor_temperatura.style.display = ''; agua.style.display = '';
+                        receptor_tuberias.style.display = '';}
+    else if (num == 4){sensor_ph.style.display = ''; receptor_tuberias.style.display = '';
+                        conducto_acido_base.style.display = ''; recipientes.style.display = '';}
+    else if (num == 5){sensor_o2.style.display = '';}
+    else if (num == 6){sensor_espuma.style.display = '';antiespumante.style.display = '';}
 
 }
 
