@@ -1576,7 +1576,7 @@ input{
     90% {background-color:transparent;left:300px;top:320px}
     100% {background-color:transparent;left:-6px;top:0px}
 }
-@keyframes mov_agua{
+@keyframes mov_aguaf{
     0% {background-color:#12d9e7;left:0px;top:160px}
     20% {background-color:#12d9e7;left:0px;top:0px}
     30% {background-color:#12d9e7;left:80px;top:0px}
@@ -1586,6 +1586,17 @@ input{
     72% {background-color:#12d9e7;left:330px;top:65px}
     80% {background-color:#12d9e7;left:330px;top:235px}
     100% {background-color:#12d9e7;left:60px;top:235px}
+}
+@keyframes mov_aguac{
+    0% {background-color:#f70a0a;left:0px;top:160px}
+    20% {background-color:#f70a0a;left:0px;top:0px}
+    30% {background-color:#f70a0a;left:80px;top:0px}
+    50% {background-color:#f70a0a;left:80px;top:200px}
+    60% {background-color:#f70a0a;left:300px;top:200px}
+    70% {background-color:#f70a0a;left:300px;top:65px}
+    72% {background-color:#f70a0a;left:330px;top:65px}
+    80% {background-color:#f70a0a;left:330px;top:235px}
+    100% {background-color:#f70a0a;left:60px;top:235px}
 }
 @keyframes mov_acido{
     0% {background-color:#e73c3c;left:0px;top:0px}

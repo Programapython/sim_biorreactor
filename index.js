@@ -143,47 +143,85 @@ function animacion_gas(){
     var poy = 68-54*(vel_aire/400);
     indicador_rotometro.style.top=`${poy}px`;
     var ct=1;
-    let gases = setInterval(()=>{
-        var a = document.querySelector(`.gas${ct}`);
-        a.style.animation = `mov_gas 5s linear infinite`;
-        ct++;
-        if (ct==21){clearInterval(gases);}
-    },300)
+    if (vel_aire>2){
+        let gases = setInterval(()=>{
+            var a = document.querySelector(`.gas${ct}`);
+            a.style.animation = `mov_gas ${vel_aire*2}s linear infinite`;
+            ct++;
+            if (ct==21){clearInterval(gases);}
+        },parseInt(vel_aire)*200)
+    }
 }
 function animacion_agua(){
     var t_deseada = parseFloat(document.getElementsByName('t_deseada')[0].value);
-    var t_medida = parseFloat(document.getElementsByName('t_medida')[0].value);
+    document.getElementsByName('t_medida')[0].value=t_deseada
 
     var ct=1;
-    let aguas = setInterval(()=>{
-        var a = document.querySelector(`.agua${ct}`);
-        a.style.animation = `mov_agua 10s linear infinite`;
-        ct++;
-        if (ct==31){clearInterval(aguas);}
+    setInterval(()=>{
+        let estado = Math.random();
+        if (estado < 0.5){
+            document.getElementsByName('t_medida')[0].value=t_deseada-estado
+            var a = document.querySelector(`.agua${ct}`);
+            a.style.animation = `mov_aguac 10s linear infinite`;
+            ct++;
+            if (ct==31){ct=1;}
+        } else if (estado > 0.5){
+            document.getElementsByName('t_medida')[0].value=t_deseada+estado
+            var a = document.querySelector(`.agua${ct}`);
+            a.style.animation = `mov_aguaf 10s linear infinite`;
+            ct++;
+            if (ct==31){ct=1;}
+        } else {
+            console.log("el estado es correcto");
+        }
     },1000)
 }
 function animacion_acido_base(){
     var ph_deseado = parseFloat(document.getElementsByName('ph_deseado')[0].value);
-    var ph_medido = parseFloat(document.getElementsByName('ph_medido')[0].value);
-    
+    document.getElementsByName('ph_medido')[0].value=ph_deseado;
+
     var ct=1;
-    let acido_base = setInterval(()=>{
-        var a = document.querySelector(`.acido${ct}`);
-        var b = document.querySelector(`.base${ct}`);
-        a.style.animation = `mov_acido 5s linear infinite`;
-        b.style.animation = `mov_base 5s linear infinite`;
-        ct++;
-        if (ct==21){clearInterval(acido_base);}
-    },500)
+    setInterval(()=>{
+        let estado = Math.random();
+        if (estado>0.5){
+            document.getElementsByName('ph_medido')[0].value=ph_deseado+estado
+            var a = document.querySelector(`.acido${ct}`);
+            var b = document.querySelector(`.base${ct}`);
+            a.style.animation = `mov_acido 10s linear infinite`;
+            b.style.animation = `none`;
+            ct++;
+            if (ct==21){ct==1;}
+        } else if (estado<0.5){
+            document.getElementsByName('ph_medido')[0].value=ph_deseado-estado
+            var a = document.querySelector(`.acido${ct}`);
+            var b = document.querySelector(`.base${ct}`);
+            a.style.animation = `none`;
+            b.style.animation = `mov_base 10s linear infinite`;
+        } else {
+            console.log("el estado es correcto");
+        }
+    },10000)
 }
 function animacion_antiespuma(){
-    var ph_deseado = parseFloat(document.getElementsByName('ph_deseado')[0].value);
-    
-    var ct=1;
-    let antiespuma = setInterval(()=>{
-        var a = document.querySelector(`.antiespumante${ct}`);
-        a.style.animation = `mov_antiespuma 5s linear infinite`;
-        ct++;
-        if (ct==21){clearInterval(antiespuma);}
-    },500)
+    setInterval(()=>{
+        let estado = Math.random();
+        var a = document.querySelector(`.antiespumante1`);
+        if (estado>0.5){
+            a.style.animation = `mov_antiespuma 5s linear infinite`;
+        } else if (estado<=0.5){
+            a.style.animation = `none`;
+        }
+    },5000)
+}
+function ver_oxigeno(){
+    var o2_deseado = parseFloat(document.getElementsByName('o2_deseado')[0].value);
+    document.getElementsByName('o2_medido')[0].value = o2_deseado;
+    setInterval(()=>{
+        let estado = Math.random();
+        if (estado>0.5){
+            document.getElementsByName('o2_medido')[0].value = o2_deseado+estado;
+        } else if (estado<=0.5){
+            document.getElementsByName('o2_medido')[0].value = o2_deseado-estado;
+        }
+    },2000)
 }
