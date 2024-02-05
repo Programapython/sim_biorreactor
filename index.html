@@ -28,7 +28,7 @@
             <form onsubmit="alert('submit!');return false">
                 <ul>
                     <li>Velocidad del aire:<input type="text" name="vel_aire" value="0"></li>
-                    <li><input class="bt" type="button" value="Ingresar datos" onclick="env_vel();"></li>
+                    <li><input class="bt" type="button" value="Ingresar datos" onclick="animacion_gas();"></li>
                     <li>
                         <input class="bt" type="button" value="Atras" onclick="ir_pagina(1,'retroceso');">
                         <input class="bt" type="button" value="Siguiente" onclick="ir_pagina(3,'avance');">
@@ -42,8 +42,8 @@
             <div class="bornera32"><div class="conector32"></div></div>
             <form onsubmit="alert('submit!');return false">
                 <ul>
-                    <li>Valor deseado:<input type="text" name="vel_s" value="0"></li>
-                    <li>Valor medido:<input type="text" name="vel_a" value="0"></li>
+                    <li>Valor deseado:<input type="text" name="t_deseada" value="0"></li>
+                    <li>Valor medido:<input type="text" name="t_medida" value="0"></li>
                     <li><input class="bt" type="button" value="Ingresar datos" onclick="env_vel();"></li>
                     <li>
                         <input class="bt" type="button" value="Atras" onclick="ir_pagina(2,'retroceso');">
@@ -69,8 +69,8 @@
 
             <form onsubmit="alert('submit!');return false">
                 <ul>
-                    <li>Valor deseado:<input type="text" name="vel_s" value="0"></li>
-                    <li>Valor medido:<input type="text" name="vel_a" value="0"></li>
+                    <li>Valor deseado:<input type="text" name="ph_deseado" value="0"></li>
+                    <li>Valor medido:<input type="text" name="ph_medido" value="0"></li>
                     <li><input class="bt" type="button" value="Ingresar datos" onclick="env_vel();"></li>
                     <li>
                         <input class="bt" type="button" value="Atras" onclick="ir_pagina(3,'retroceso');">
@@ -97,8 +97,8 @@
 
             <form onsubmit="alert('submit!');return false">
                 <ul>
-                    <li>Valor deseado:<input type="text" name="vel_s" value="0"></li>
-                    <li>Valor medido:<input type="text" name="vel_a" value="0"></li>
+                    <li>Valor deseado:<input type="text" name="o2_deseado" value="0"></li>
+                    <li>Valor medido:<input type="text" name="o2_medido" value="0"></li>
                     <li><input class="bt" type="button" value="Ingresar datos" onclick="env_vel();"></li>
                     <li>
                         <input class="bt" type="button" value="Atras" onclick="ir_pagina(4,'retroceso');">
@@ -170,7 +170,7 @@
         </div>
         <div class="aire">
             AIRE
-            <div class="tuberias_aire"></div>
+            <div class="tuberias_aire"><div class="gas1"></div></div>
             <div class="aire_complementos"></div>
         </div>
         <div class="agua">

@@ -107,17 +107,62 @@ function ir_pagina(num, tipo){
         monitores[num-2].style.display = 'none';
     }
 
-    if (num == 1){;} 
-    else if (num == 2){esparcidor.style.display = '';conducto_aire.style.display = '';
-                        aire.style.display = ''; rotometro.style.display = '';}
-    else if (num == 3){
-                        sensor_temperatura.style.display = ''; agua.style.display = '';
-                        receptor_tuberias.style.display = '';}
-    else if (num == 4){sensor_ph.style.display = ''; receptor_tuberias.style.display = '';
-                        conducto_acido_base.style.display = ''; recipientes.style.display = '';}
-    else if (num == 5){sensor_o2.style.display = '';}
-    else if (num == 6){sensor_espuma.style.display = '';antiespumante.style.display = '';
-                        conducto_astiespumante.style.display = '';}
+    let elementos_2 = [esparcidor, conducto_aire,aire, rotometro]
+    let elementos_3 = [sensor_temperatura,agua,receptor_tuberias]
+    let elementos_4 = [sensor_ph, receptor_tuberias,conducto_acido_base, recipientes]
+    let elementos_5 = [sensor_o2]
+    let elementos_6 = [sensor_espuma,antiespumante,conducto_astiespumante]
 
+    if (num == 1){
+        for (var i = 0; i < 4; i++){elementos_2[i].style.display = 'none';}
+    } 
+    else if (num == 2){
+        for (var i = 0; i < 4; i++){elementos_2[i].style.display = '';}
+        for (var i = 0; i < 3; i++){elementos_3[i].style.display = 'none';}
+    }
+    else if (num == 3){
+        for (var i = 0; i < 3; i++){elementos_3[i].style.display = '';}
+        for (var i = 0; i < 4; i++){elementos_4[i].style.display = 'none';}
+    }
+    else if (num == 4){
+        for (var i = 0; i < 4; i++){elementos_4[i].style.display = '';}
+        for (var i = 0; i < 1; i++){elementos_5[i].style.display = 'none';}
+    }
+    else if (num == 5){
+        for (var i = 0; i < 1; i++){elementos_5[i].style.display = '';}
+        for (var i = 0; i < 3; i++){elementos_6[i].style.display = 'none';}
+    }
+    else if (num == 6){
+        for (var i = 0; i < 3; i++){elementos_6[i].style.display = '';}
+    }
+}
+
+var posicion_gas = ["266px,0px","266px,265px","300px,305px"]
+
+function animacion_gas(){
+    var estado=0;
+    var gas1 = document.querySelector('.gas1')
+    var vel_aire = parseFloat(document.getElementsByName('vel_aire')[0].value);
+    
+    var poy = 68-54*(vel_aire/400)
+    indicador_rotometro.style.top=`${poy}px`
+
+    indicador_rotometro.style.transition=`1s`
+    setInterval(()=>{
+        if (estado==3){
+            gas1.style.background = "transparent";
+            estado++;
+        } else if (estado == 4) {
+            gas1.style.transform =`translate(-6px,0px)`
+            estado++;
+        } else if (estado==5){
+            gas1.style.background = "blue";
+            estado = 0;
+        } else {
+            gas1.style.transition = `vel_aire`;
+            gas1.style.transform =`translate(${posicion_gas[estado]})`;
+            estado++;
+        }
+    },vel_aire*1000)
 }
 
