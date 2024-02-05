@@ -58,7 +58,6 @@ function env_vel(){
         // pala1.style.animation =`rotar ${vel_paletas}s linear infinite`;
         // pala2.style.animation = `rotar ${vel_paletas}s linear infinite`;
         pala3.style.animation = `rotar ${vel_paletas}s linear infinite`;
-        console.log(vel_paletas)
     } else {
         alert("Algun valor ingresado es incorreto, ingrese valores válidos.");
     }
@@ -133,36 +132,58 @@ function ir_pagina(num, tipo){
         for (var i = 0; i < 3; i++){elementos_6[i].style.display = 'none';}
     }
     else if (num == 6){
-        for (var i = 0; i < 3; i++){elementos_6[i].style.display = '';}
+        for (var i = 0; i < 3; i++){elementos_6[i].style.display = '';animacion_antiespuma();}
     }
 }
 
-var posicion_gas = ["266px,0px","266px,265px","300px,305px"]
 
 function animacion_gas(){
-    var estado=0;
-    var gas1 = document.querySelector('.gas1')
     var vel_aire = parseFloat(document.getElementsByName('vel_aire')[0].value);
     
-    var poy = 68-54*(vel_aire/400)
-    indicador_rotometro.style.top=`${poy}px`
-
-    indicador_rotometro.style.transition=`1s`
-    setInterval(()=>{
-        if (estado==3){
-            gas1.style.background = "transparent";
-            estado++;
-        } else if (estado == 4) {
-            gas1.style.transform =`translate(-6px,0px)`
-            estado++;
-        } else if (estado==5){
-            gas1.style.background = "blue";
-            estado = 0;
-        } else {
-            gas1.style.transition = `vel_aire`;
-            gas1.style.transform =`translate(${posicion_gas[estado]})`;
-            estado++;
-        }
-    },vel_aire*1000)
+    var poy = 68-54*(vel_aire/400);
+    indicador_rotometro.style.top=`${poy}px`;
+    var ct=1;
+    let gases = setInterval(()=>{
+        var a = document.querySelector(`.gas${ct}`);
+        a.style.animation = `mov_gas 5s linear infinite`;
+        ct++;
+        if (ct==21){clearInterval(gases);}
+    },300)
 }
+function animacion_agua(){
+    var t_deseada = parseFloat(document.getElementsByName('t_deseada')[0].value);
+    var t_medida = parseFloat(document.getElementsByName('t_medida')[0].value);
 
+    var ct=1;
+    let aguas = setInterval(()=>{
+        var a = document.querySelector(`.agua${ct}`);
+        a.style.animation = `mov_agua 10s linear infinite`;
+        ct++;
+        if (ct==31){clearInterval(aguas);}
+    },1000)
+}
+function animacion_acido_base(){
+    var ph_deseado = parseFloat(document.getElementsByName('ph_deseado')[0].value);
+    var ph_medido = parseFloat(document.getElementsByName('ph_medido')[0].value);
+    
+    var ct=1;
+    let acido_base = setInterval(()=>{
+        var a = document.querySelector(`.acido${ct}`);
+        var b = document.querySelector(`.base${ct}`);
+        a.style.animation = `mov_acido 5s linear infinite`;
+        b.style.animation = `mov_base 5s linear infinite`;
+        ct++;
+        if (ct==21){clearInterval(acido_base);}
+    },500)
+}
+function animacion_antiespuma(){
+    var ph_deseado = parseFloat(document.getElementsByName('ph_deseado')[0].value);
+    
+    var ct=1;
+    let antiespuma = setInterval(()=>{
+        var a = document.querySelector(`.antiespumante${ct}`);
+        a.style.animation = `mov_antiespuma 5s linear infinite`;
+        ct++;
+        if (ct==21){clearInterval(antiespuma);}
+    },500)
+}

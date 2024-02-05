@@ -44,7 +44,7 @@
                 <ul>
                     <li>Valor deseado:<input type="text" name="t_deseada" value="0"></li>
                     <li>Valor medido:<input type="text" name="t_medida" value="0"></li>
-                    <li><input class="bt" type="button" value="Ingresar datos" onclick="env_vel();"></li>
+                    <li><input class="bt" type="button" value="Ingresar datos" onclick="animacion_agua();"></li>
                     <li>
                         <input class="bt" type="button" value="Atras" onclick="ir_pagina(2,'retroceso');">
                         <input class="bt" type="button" value="Siguiente" onclick="ir_pagina(4,'avance');">
@@ -71,7 +71,7 @@
                 <ul>
                     <li>Valor deseado:<input type="text" name="ph_deseado" value="0"></li>
                     <li>Valor medido:<input type="text" name="ph_medido" value="0"></li>
-                    <li><input class="bt" type="button" value="Ingresar datos" onclick="env_vel();"></li>
+                    <li><input class="bt" type="button" value="Ingresar datos" onclick="animacion_acido_base();"></li>
                     <li>
                         <input class="bt" type="button" value="Atras" onclick="ir_pagina(3,'retroceso');">
                         <input class="bt" type="button" value="Siguiente" onclick="ir_pagina(5,'avance');">
@@ -99,7 +99,7 @@
                 <ul>
                     <li>Valor deseado:<input type="text" name="o2_deseado" value="0"></li>
                     <li>Valor medido:<input type="text" name="o2_medido" value="0"></li>
-                    <li><input class="bt" type="button" value="Ingresar datos" onclick="env_vel();"></li>
+                    <li><input class="bt" type="button" value="Ingresar datos" onclick="animacion_antiespuma();"></li>
                     <li>
                         <input class="bt" type="button" value="Atras" onclick="ir_pagina(4,'retroceso');">
                         <input class="bt" type="button" value="Siguiente" onclick="ir_pagina(6,'avance');">
@@ -145,9 +145,70 @@
                 <div class="sensor_o2"></div>
                 <div class="sensor_espuma"></div>
                 <div class="conducto_acido_base">
+                    <div class="acido1"></div>
+                    <div class="acido2"></div>
+                    <div class="acido3"></div>
+                    <div class="acido4"></div>
+                    <div class="acido5"></div>
+                    <div class="acido6"></div>
+                    <div class="acido7"></div>
+                    <div class="acido8"></div>
+                    <div class="acido9"></div>
+                    <div class="acido10"></div>
+                    <div class="acido11"></div>
+                    <div class="acido12"></div>
+                    <div class="acido13"></div>
+                    <div class="acido14"></div>
+                    <div class="acido15"></div>
+                    <div class="acido16"></div>
+                    <div class="acido17"></div>
+                    <div class="acido18"></div>
+                    <div class="acido19"></div>
+                    <div class="acido20"></div>
+                    <div class="base1"></div>
+                    <div class="base2"></div>
+                    <div class="base3"></div>
+                    <div class="base4"></div>
+                    <div class="base5"></div>
+                    <div class="base6"></div>
+                    <div class="base7"></div>
+                    <div class="base8"></div>
+                    <div class="base9"></div>
+                    <div class="base10"></div>
+                    <div class="base11"></div>
+                    <div class="base12"></div>
+                    <div class="base13"></div>
+                    <div class="base14"></div>
+                    <div class="base15"></div>
+                    <div class="base16"></div>
+                    <div class="base17"></div>
+                    <div class="base18"></div>
+                    <div class="base19"></div>
+                    <div class="base20"></div>
                     <div class="receptor_tuberias"></div>
                 </div>
-                <div class="conducto_astiespumante"></div>
+                <div class="conducto_astiespumante">
+                    <div class="antiespumante1"></div>
+                    <div class="antiespumante2"></div>
+                    <div class="antiespumante3"></div>
+                    <div class="antiespumante4"></div>
+                    <div class="antiespumante5"></div>
+                    <div class="antiespumante6"></div>
+                    <div class="antiespumante7"></div>
+                    <div class="antiespumante8"></div>
+                    <div class="antiespumante9"></div>
+                    <div class="antiespumante10"></div>
+                    <div class="antiespumante11"></div>
+                    <div class="antiespumante12"></div>
+                    <div class="antiespumante13"></div>
+                    <div class="antiespumante14"></div>
+                    <div class="antiespumante15"></div>
+                    <div class="antiespumante16"></div>
+                    <div class="antiespumante17"></div>
+                    <div class="antiespumante18"></div>
+                    <div class="antiespumante19"></div>
+                    <div class="antiespumante20"></div>
+                </div>
                 <!-- esparcidor de aire -->
                 <div class="conducto_aire"></div>
                 <div class="esparcidor"></div>
@@ -170,14 +231,67 @@
         </div>
         <div class="aire">
             AIRE
-            <div class="tuberias_aire"><div class="gas1"></div></div>
+            <div class="tuberias_aire">
+                <div class="gas1"></div>
+                <div class="gas2"></div>
+                <div class="gas3"></div>
+                <div class="gas4"></div>
+                <div class="gas5"></div>
+                <div class="gas6"></div>
+                <div class="gas7"></div>
+                <div class="gas8"></div>
+                <div class="gas9"></div>
+                <div class="gas10"></div>
+                <div class="gas11"></div>
+                <div class="gas12"></div>
+                <div class="gas13"></div>
+                <div class="gas14"></div>
+                <div class="gas15"></div>
+                <div class="gas16"></div>
+                <div class="gas17"></div>
+                <div class="gas18"></div>
+                <div class="gas19"></div>
+                <div class="gas20"></div>
+            </div>
             <div class="aire_complementos"></div>
         </div>
         <div class="agua">
             <div class="tuberias_agua1">
                 <div class="tuberias_agua11"></div>
             </div>
-            <div class="tuberias_agua2"></div>
+            <div class="tuberias_agua2">
+                <div class="agua1"></div>
+                <div class="agua2"></div>
+                <div class="agua3"></div>
+                <div class="agua4"></div>
+                <div class="agua5"></div>
+                <div class="agua6"></div>
+                <div class="agua7"></div>
+                <div class="agua8"></div>
+                <div class="agua9"></div>
+                <div class="agua10"></div>
+                <div class="agua11"></div>
+                <div class="agua12"></div>
+                <div class="agua13"></div>
+                <div class="agua14"></div>
+                <div class="agua15"></div>
+                <div class="agua16"></div>
+                <div class="agua17"></div>
+                <div class="agua18"></div>
+                <div class="agua19"></div>
+                <div class="agua20"></div>
+                <div class="agua21"></div>
+                <div class="agua22"></div>
+                <div class="agua23"></div>
+                <div class="agua24"></div>
+                <div class="agua25"></div>
+                <div class="agua26"></div>
+                <div class="agua27"></div>
+                <div class="agua28"></div>
+                <div class="agua29"></div>
+                <div class="agua30"></div>
+            </div>
+
         </div>
         <div class="recipientes">
             <div class="acido">ÁCIDO</div>

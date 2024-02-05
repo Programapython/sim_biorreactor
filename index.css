@@ -867,7 +867,7 @@ input{
     display: flex;
     justify-content: center;
 }
-.tuberias_agua2::before{
+.tuberias_agua2::after{
     content: "";
     background: rgb(138, 138, 138);
     width: 20px;
@@ -878,7 +878,7 @@ input{
     display: flex;
     justify-content: center;
 }
-.tuberias_agua2::after{
+.tuberias_agua2::before{
     content: "";
     background: white;
     width: 66px;
@@ -1569,11 +1569,1010 @@ input{
     }
 }
 
+@keyframes mov_gas{
+    0% {background-color:blue;left:-6px;top:0px}
+    40% {background-color:blue;left:254px;top:0px}
+    80% {background-color:blue;left:254px;top:265px}
+    90% {background-color:transparent;left:300px;top:320px}
+    100% {background-color:transparent;left:-6px;top:0px}
+}
+@keyframes mov_agua{
+    0% {background-color:#12d9e7;left:0px;top:160px}
+    20% {background-color:#12d9e7;left:0px;top:0px}
+    30% {background-color:#12d9e7;left:80px;top:0px}
+    50% {background-color:#12d9e7;left:80px;top:200px}
+    60% {background-color:#12d9e7;left:300px;top:200px}
+    70% {background-color:#12d9e7;left:300px;top:65px}
+    72% {background-color:#12d9e7;left:330px;top:65px}
+    80% {background-color:#12d9e7;left:330px;top:235px}
+    100% {background-color:#12d9e7;left:60px;top:235px}
+}
+@keyframes mov_acido{
+    0% {background-color:#e73c3c;left:0px;top:0px}
+    60% {background-color:#e73c3c;left:0px;top:100px}
+    100% {background-color:transparent;left:0px;top:200px}
+}
+@keyframes mov_base{
+    0% {background-color:#6d6deb;left:21px;top:0px}
+    60% {background-color:#6d6deb;left:21px;top:100px}
+    100% {background-color:transparent;left:21px;top:200px}
+}
+@keyframes mov_antiespuma{
+    0% {background-color:#70ec76;left:0px;top:0px}
+    60% {background-color:#70ec76;left:0px;top:100px}
+    100% {background-color:transparent;left:0px;top:200px}
+}
 .gas1{
     background: blue;
     width: 6px;
     height: 6px;
     position: absolute;
     left: -12px;
+    border-radius: 3px;
+}
+.gas2{
+    background: blue;
+    width: 6px;
+    height: 6px;
+    position: absolute;
+    left: -12px;
+    border-radius: 3px;
+}
+.gas3{
+    background: blue;
+    width: 6px;
+    height: 6px;
+    position: absolute;
+    left: -12px;
+    border-radius: 3px;
+}
+.gas4{
+    background: blue;
+    width: 6px;
+    height: 6px;
+    position: absolute;
+    left: -12px;
+    border-radius: 3px;
+}
+.gas5{
+    background: blue;
+    width: 6px;
+    height: 6px;
+    position: absolute;
+    left: -12px;
+    border-radius: 3px;
+}
+.gas6{
+    background: blue;
+    width: 6px;
+    height: 6px;
+    position: absolute;
+    left: -12px;
+    border-radius: 3px;
+}
+.gas7{
+    background: blue;
+    width: 6px;
+    height: 6px;
+    position: absolute;
+    left: -12px;
+    border-radius: 3px;
+}
+.gas8{
+    background: blue;
+    width: 6px;
+    height: 6px;
+    position: absolute;
+    left: -12px;
+    border-radius: 3px;
+}
+.gas9{
+    background: blue;
+    width: 6px;
+    height: 6px;
+    position: absolute;
+    left: -12px;
+    border-radius: 3px;
+}
+.gas10{
+    background: blue;
+    width: 6px;
+    height: 6px;
+    position: absolute;
+    left: -12px;
+    border-radius: 3px;
+}
+.gas11{
+    background: blue;
+    width: 6px;
+    height: 6px;
+    position: absolute;
+    left: -12px;
+    border-radius: 3px;
+}
+.gas12{
+    background: blue;
+    width: 6px;
+    height: 6px;
+    position: absolute;
+    left: -12px;
+    border-radius: 3px;
+}
+.gas13{
+    background: blue;
+    width: 6px;
+    height: 6px;
+    position: absolute;
+    left: -12px;
+    border-radius: 3px;
+}
+.gas14{
+    background: blue;
+    width: 6px;
+    height: 6px;
+    position: absolute;
+    left: -12px;
+    border-radius: 3px;
+}
+.gas15{
+    background: blue;
+    width: 6px;
+    height: 6px;
+    position: absolute;
+    left: -12px;
+    border-radius: 3px;
+}
+.gas16{
+    background: blue;
+    width: 6px;
+    height: 6px;
+    position: absolute;
+    left: -12px;
+    border-radius: 3px;
+}
+.gas17{
+    background: blue;
+    width: 6px;
+    height: 6px;
+    position: absolute;
+    left: -12px;
+    border-radius: 3px;
+}
+.gas18{
+    background: blue;
+    width: 6px;
+    height: 6px;
+    position: absolute;
+    left: -12px;
+    border-radius: 3px;
+}
+.gas19{
+    background: blue;
+    width: 6px;
+    height: 6px;
+    position: absolute;
+    left: -12px;
+    border-radius: 3px;
+}
+.gas20{
+    background: blue;
+    width: 6px;
+    height: 6px;
+    position: absolute;
+    left: -12px;
+    border-radius: 3px;
+}
+
+.agua1{
+    background: transparent;
+    width: 6px;
+    height: 6px;
+    position: absolute;
+    left: 0px;
+    top: 150px;
+    border-radius: 3px;
+}
+.agua2{
+    background: transparent;
+    width: 6px;
+    height: 6px;
+    position: absolute;
+    left: 0px;
+    top: 150px;
+    border-radius: 3px;
+}
+.agua3{
+    background: transparent;
+    width: 6px;
+    height: 6px;
+    position: absolute;
+    left: 0px;
+    top: 150px;
+    border-radius: 3px;
+}
+.agua4{
+    background: transparent;
+    width: 6px;
+    height: 6px;
+    position: absolute;
+    left: 0px;
+    top: 150px;
+    border-radius: 3px;
+}
+.agua5{
+    background: transparent;
+    width: 6px;
+    height: 6px;
+    position: absolute;
+    left: 0px;
+    top: 150px;
+    border-radius: 3px;
+}
+.agua6{
+    background: transparent;
+    width: 6px;
+    height: 6px;
+    position: absolute;
+    left: 0px;
+    top: 150px;
+    border-radius: 3px;
+}
+.agua7{
+    background: transparent;
+    width: 6px;
+    height: 6px;
+    position: absolute;
+    left: 0px;
+    top: 150px;
+    border-radius: 3px;
+}
+.agua8{
+    background: transparent;
+    width: 6px;
+    height: 6px;
+    position: absolute;
+    left: 0px;
+    top: 150px;
+    border-radius: 3px;
+}
+.agua9{
+    background: transparent;
+    width: 6px;
+    height: 6px;
+    position: absolute;
+    left: 0px;
+    top: 150px;
+    border-radius: 3px;
+}
+.agua10{
+    background: transparent;
+    width: 6px;
+    height: 6px;
+    position: absolute;
+    left: 0px;
+    top: 150px;
+    border-radius: 3px;
+}
+.agua11{
+    background: transparent;
+    width: 6px;
+    height: 6px;
+    position: absolute;
+    left: 0px;
+    top: 150px;
+    border-radius: 3px;
+}
+.agua12{
+    background: transparent;
+    width: 6px;
+    height: 6px;
+    position: absolute;
+    left: 0px;
+    top: 150px;
+    border-radius: 3px;
+}
+.agua13{
+    background: transparent;
+    width: 6px;
+    height: 6px;
+    position: absolute;
+    left: 0px;
+    top: 150px;
+    border-radius: 3px;
+}
+.agua14{
+    background: transparent;
+    width: 6px;
+    height: 6px;
+    position: absolute;
+    left: 0px;
+    top: 150px;
+    border-radius: 3px;
+}
+.agua15{
+    background: transparent;
+    width: 6px;
+    height: 6px;
+    position: absolute;
+    left: 0px;
+    top: 150px;
+    border-radius: 3px;
+}
+.agua16{
+    background: transparent;
+    width: 6px;
+    height: 6px;
+    position: absolute;
+    left: 0px;
+    top: 150px;
+    border-radius: 3px;
+}
+.agua17{
+    background: transparent;
+    width: 6px;
+    height: 6px;
+    position: absolute;
+    left: 0px;
+    top: 150px;
+    border-radius: 3px;
+}
+.agua18{
+    background: transparent;
+    width: 6px;
+    height: 6px;
+    position: absolute;
+    left: 0px;
+    top: 150px;
+    border-radius: 3px;
+}
+.agua19{
+    background: transparent;
+    width: 6px;
+    height: 6px;
+    position: absolute;
+    left: 0px;
+    top: 150px;
+    border-radius: 3px;
+}
+.agua20{
+    background: transparent;
+    width: 6px;
+    height: 6px;
+    position: absolute;
+    left: 0px;
+    top: 150px;
+    border-radius: 3px;
+}
+.agua21{
+    background: transparent;
+    width: 6px;
+    height: 6px;
+    position: absolute;
+    left: 0px;
+    top: 150px;
+    border-radius: 3px;
+}
+.agua22{
+    background: transparent;
+    width: 6px;
+    height: 6px;
+    position: absolute;
+    left: 0px;
+    top: 150px;
+    border-radius: 3px;
+}
+.agua23{
+    background: transparent;
+    width: 6px;
+    height: 6px;
+    position: absolute;
+    left: 0px;
+    top: 150px;
+    border-radius: 3px;
+}
+.agua24{
+    background: transparent;
+    width: 6px;
+    height: 6px;
+    position: absolute;
+    left: 0px;
+    top: 150px;
+    border-radius: 3px;
+}
+.agua25{
+    background: transparent;
+    width: 6px;
+    height: 6px;
+    position: absolute;
+    left: 0px;
+    top: 150px;
+    border-radius: 3px;
+}
+.agua26{
+    background: transparent;
+    width: 6px;
+    height: 6px;
+    position: absolute;
+    left: 0px;
+    top: 150px;
+    border-radius: 3px;
+}
+.agua27{
+    background: transparent;
+    width: 6px;
+    height: 6px;
+    position: absolute;
+    left: 0px;
+    top: 150px;
+    border-radius: 3px;
+}
+.agua28{
+    background: transparent;
+    width: 6px;
+    height: 6px;
+    position: absolute;
+    left: 0px;
+    top: 150px;
+    border-radius: 3px;
+}
+.agua29{
+    background: transparent;
+    width: 6px;
+    height: 6px;
+    position: absolute;
+    left: 0px;
+    top: 150px;
+    border-radius: 3px;
+}
+.agua30{
+    background: transparent;
+    width: 6px;
+    height: 6px;
+    position: absolute;
+    left: 0px;
+    top: 150px;
+    border-radius: 3px;
+}
+
+.acido1{
+    background: transparent;
+    width: 6px;
+    height: 6px;
+    position: absolute;
+    left: 2px;
+    top: 0px;
+    border-radius: 3px;
+}
+.acido2{
+    background: transparent;
+    width: 6px;
+    height: 6px;
+    position: absolute;
+    left: 2px;
+    top: 0px;
+    border-radius: 3px;
+}
+.acido3{
+    background: transparent;
+    width: 6px;
+    height: 6px;
+    position: absolute;
+    left: 2px;
+    top: 0px;
+    border-radius: 3px;
+}
+.acido4{
+    background: transparent;
+    width: 6px;
+    height: 6px;
+    position: absolute;
+    left: 2px;
+    top: 0px;
+    border-radius: 3px;
+}
+.acido5{
+    background: transparent;
+    width: 6px;
+    height: 6px;
+    position: absolute;
+    left: 2px;
+    top: 0px;
+    border-radius: 3px;
+}
+.acido6{
+    background: transparent;
+    width: 6px;
+    height: 6px;
+    position: absolute;
+    left: 2px;
+    top: 0px;
+    border-radius: 3px;
+}
+.acido7{
+    background: transparent;
+    width: 6px;
+    height: 6px;
+    position: absolute;
+    left: 2px;
+    top: 0px;
+    border-radius: 3px;
+}
+.acido8{
+    background: transparent;
+    width: 6px;
+    height: 6px;
+    position: absolute;
+    left: 2px;
+    top: 0px;
+    border-radius: 3px;
+}
+.acido9{
+    background: transparent;
+    width: 6px;
+    height: 6px;
+    position: absolute;
+    left: 2px;
+    top: 0px;
+    border-radius: 3px;
+}
+.acido10{
+    background: transparent;
+    width: 6px;
+    height: 6px;
+    position: absolute;
+    left: 2px;
+    top: 0px;
+    border-radius: 3px;
+}
+.acido11{
+    background: transparent;
+    width: 6px;
+    height: 6px;
+    position: absolute;
+    left: 2px;
+    top: 0px;
+    border-radius: 3px;
+}
+.acido12{
+    background: transparent;
+    width: 6px;
+    height: 6px;
+    position: absolute;
+    left: 2px;
+    top: 0px;
+    border-radius: 3px;
+}
+.acido13{
+    background: transparent;
+    width: 6px;
+    height: 6px;
+    position: absolute;
+    left: 2px;
+    top: 0px;
+    border-radius: 3px;
+}
+.acido14{
+    background: transparent;
+    width: 6px;
+    height: 6px;
+    position: absolute;
+    left: 2px;
+    top: 0px;
+    border-radius: 3px;
+}
+.acido15{
+    background: transparent;
+    width: 6px;
+    height: 6px;
+    position: absolute;
+    left: 2px;
+    top: 0px;
+    border-radius: 3px;
+}
+.acido16{
+    background: transparent;
+    width: 6px;
+    height: 6px;
+    position: absolute;
+    left: 2px;
+    top: 0px;
+    border-radius: 3px;
+}
+.acido17{
+    background: transparent;
+    width: 6px;
+    height: 6px;
+    position: absolute;
+    left: 2px;
+    top: 0px;
+    border-radius: 3px;
+}
+.acido18{
+    background: transparent;
+    width: 6px;
+    height: 6px;
+    position: absolute;
+    left: 2px;
+    top: 0px;
+    border-radius: 3px;
+}
+.acido19{
+    background: transparent;
+    width: 6px;
+    height: 6px;
+    position: absolute;
+    left: 2px;
+    top: 0px;
+    border-radius: 3px;
+}
+.acido20{
+    background: transparent;
+    width: 6px;
+    height: 6px;
+    position: absolute;
+    left: 2px;
+    top: 0px;
+    border-radius: 3px;
+}
+
+.base1{
+    background: transparent;
+    width: 6px;
+    height: 6px;
+    position: absolute;
+    left: 21px;
+    top: 0px;
+    border-radius: 3px;
+}
+.base2{
+    background: transparent;
+    width: 6px;
+    height: 6px;
+    position: absolute;
+    left: 21px;
+    top: 0px;
+    border-radius: 3px;
+}
+.base3{
+    background: transparent;
+    width: 6px;
+    height: 6px;
+    position: absolute;
+    left: 21px;
+    top: 0px;
+    border-radius: 3px;
+}
+.base4{
+    background: transparent;
+    width: 6px;
+    height: 6px;
+    position: absolute;
+    left: 21px;
+    top: 0px;
+    border-radius: 3px;
+}
+.base5{
+    background: transparent;
+    width: 6px;
+    height: 6px;
+    position: absolute;
+    left: 21px;
+    top: 0px;
+    border-radius: 3px;
+}
+.base6{
+    background: transparent;
+    width: 6px;
+    height: 6px;
+    position: absolute;
+    left: 21px;
+    top: 0px;
+    border-radius: 3px;
+}
+.base7{
+    background: transparent;
+    width: 6px;
+    height: 6px;
+    position: absolute;
+    left: 21px;
+    top: 0px;
+    border-radius: 3px;
+}
+.base8{
+    background: transparent;
+    width: 6px;
+    height: 6px;
+    position: absolute;
+    left: 21px;
+    top: 0px;
+    border-radius: 3px;
+}
+.base9{
+    background: transparent;
+    width: 6px;
+    height: 6px;
+    position: absolute;
+    left: 21px;
+    top: 0px;
+    border-radius: 3px;
+}
+.base10{
+    background: transparent;
+    width: 6px;
+    height: 6px;
+    position: absolute;
+    left: 21px;
+    top: 0px;
+    border-radius: 3px;
+}
+.base11{
+    background: transparent;
+    width: 6px;
+    height: 6px;
+    position: absolute;
+    left: 21px;
+    top: 0px;
+    border-radius: 3px;
+}
+.base12{
+    background: transparent;
+    width: 6px;
+    height: 6px;
+    position: absolute;
+    left: 21px;
+    top: 0px;
+    border-radius: 3px;
+}
+.base13{
+    background: transparent;
+    width: 6px;
+    height: 6px;
+    position: absolute;
+    left: 21px;
+    top: 0px;
+    border-radius: 3px;
+}
+.base14{
+    background: transparent;
+    width: 6px;
+    height: 6px;
+    position: absolute;
+    left: 21px;
+    top: 0px;
+    border-radius: 3px;
+}
+.base15{
+    background: transparent;
+    width: 6px;
+    height: 6px;
+    position: absolute;
+    left: 21px;
+    top: 0px;
+    border-radius: 3px;
+}
+.base16{
+    background: transparent;
+    width: 6px;
+    height: 6px;
+    position: absolute;
+    left: 21px;
+    top: 0px;
+    border-radius: 3px;
+}
+.base17{
+    background: transparent;
+    width: 6px;
+    height: 6px;
+    position: absolute;
+    left: 21px;
+    top: 0px;
+    border-radius: 3px;
+}
+.base18{
+    background: transparent;
+    width: 6px;
+    height: 6px;
+    position: absolute;
+    left: 21px;
+    top: 0px;
+    border-radius: 3px;
+}
+.base19{
+    background: transparent;
+    width: 6px;
+    height: 6px;
+    position: absolute;
+    left: 21px;
+    top: 0px;
+    border-radius: 3px;
+}
+.base20{
+    background: transparent;
+    width: 6px;
+    height: 6px;
+    position: absolute;
+    left: 21px;
+    top: 0px;
+    border-radius: 3px;
+}
+
+.antiespumante1{
+    background: transparent;
+    width: 6px;
+    height: 6px;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    border-radius: 3px;
+}
+.antiespumante2{
+    background: transparent;
+    width: 6px;
+    height: 6px;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    border-radius: 3px;
+}
+.antiespumante3{
+    background: transparent;
+    width: 6px;
+    height: 6px;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    border-radius: 3px;
+}
+.antiespumante4{
+    background: transparent;
+    width: 6px;
+    height: 6px;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    border-radius: 3px;
+}
+.antiespumante5{
+    background: transparent;
+    width: 6px;
+    height: 6px;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    border-radius: 3px;
+}
+.antiespumante6{
+    background: transparent;
+    width: 6px;
+    height: 6px;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    border-radius: 3px;
+}
+.antiespumante7{
+    background: transparent;
+    width: 6px;
+    height: 6px;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    border-radius: 3px;
+}
+.antiespumante8{
+    background: transparent;
+    width: 6px;
+    height: 6px;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    border-radius: 3px;
+}
+.antiespumante9{
+    background: transparent;
+    width: 6px;
+    height: 6px;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    border-radius: 3px;
+}
+.antiespumante10{
+    background: transparent;
+    width: 6px;
+    height: 6px;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    border-radius: 3px;
+}
+.antiespumante11{
+    background: transparent;
+    width: 6px;
+    height: 6px;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    border-radius: 3px;
+}
+.antiespumante12{
+    background: transparent;
+    width: 6px;
+    height: 6px;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    border-radius: 3px;
+}
+.antiespumante13{
+    background: transparent;
+    width: 6px;
+    height: 6px;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    border-radius: 3px;
+}
+.antiespumante14{
+    background: transparent;
+    width: 6px;
+    height: 6px;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    border-radius: 3px;
+}
+.antiespumante15{
+    background: transparent;
+    width: 6px;
+    height: 6px;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    border-radius: 3px;
+}
+.antiespumante16{
+    background: transparent;
+    width: 6px;
+    height: 6px;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    border-radius: 3px;
+}
+.antiespumante17{
+    background: transparent;
+    width: 6px;
+    height: 6px;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    border-radius: 3px;
+}
+.antiespumante18{
+    background: transparent;
+    width: 6px;
+    height: 6px;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    border-radius: 3px;
+}
+.antiespumante19{
+    background: transparent;
+    width: 6px;
+    height: 6px;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    border-radius: 3px;
+}
+.antiespumante20{
+    background: transparent;
+    width: 6px;
+    height: 6px;
+    position: absolute;
+    left: 0px;
+    top: 0px;
     border-radius: 3px;
 }
