@@ -205,13 +205,16 @@ function animacion_acido_base(){
 function animacion_antiespuma(){
     setInterval(()=>{
         let estado = Math.random();
+        document.querySelector(`.espuma`).style.background = "linear-gradient(transparent,rgba(152, 155, 153, 0.623))";
         var a = document.querySelector(`.antiespumante1`);
         if (estado>0.5){
-            a.style.animation = `mov_antiespuma 5s linear infinite`;
+            a.style.animation = `mov_antiespuma 3s linear infinite`;
+            document.querySelector(`.espuma`).style.opacity = `${estado}`;
         } else if (estado<=0.5){
             a.style.animation = `none`;
+            document.querySelector(`.espuma`).style.opacity = `${estado}`;
         }
-    },5000)
+    },3000)
 }
 function ver_oxigeno(){
     var o2_deseado = parseFloat(document.getElementsByName('o2_deseado')[0].value);
