@@ -1569,16 +1569,139 @@ input{
     }
 }
 
-@keyframes mov_gas{
+@keyframes mov_gas1{
     0% {background-color:blue;left:-6px;top:0px}
     40% {background-color:blue;left:254px;top:0px}
     80% {background-color:blue;left:254px;top:265px}
     90% {background-color:transparent;left:280px;top:300px}
-    91% {background-color:transparent;left:350px;top:290px}
-    95% {background-color:white;left:350px;top:190px}
-    96% {background-color:transparent;left:350px;top:150px}
+    91% {background-color:transparent;left: 295px;top:290px}
+    92% {background-color:white;left: 295px;top:280px}
+    98% {background-color:white;left:295px;top:190px}
+    99% {background-color:transparent;left:295px;top:150px}
     100% {background-color:transparent;left:-6px;top:0px}
 }
+@keyframes mov_gas2{
+    0% {background-color:blue;left:-6px;top:0px}
+    40% {background-color:blue;left:254px;top:0px}
+    80% {background-color:blue;left:254px;top:265px}
+    90% {background-color:transparent;left:280px;top:300px}
+    91% {background-color:transparent;left: 303px;top:290px}
+    92% {background-color:white;left: 303px;top:280px}
+    98% {background-color:white;left:303px;top:190px}
+    99% {background-color:transparent;left:303px;top:150px}
+    100% {background-color:transparent;left:-6px;top:0px}
+}
+@keyframes mov_gas3{
+    0% {background-color:blue;left:-6px;top:0px}
+    40% {background-color:blue;left:254px;top:0px}
+    80% {background-color:blue;left:254px;top:265px}
+    90% {background-color:transparent;left:280px;top:300px}
+    91% {background-color:transparent;left: 311px;top:290px}
+    92% {background-color:white;left: 311px;top:280px}
+    98% {background-color:white;left:311px;top:190px}
+    99% {background-color:transparent;left:311px;top:150px}
+    100% {background-color:transparent;left:-6px;top:0px}
+}
+@keyframes mov_gas4{
+    0% {background-color:blue;left:-6px;top:0px}
+    40% {background-color:blue;left:254px;top:0px}
+    80% {background-color:blue;left:254px;top:265px}
+    90% {background-color:transparent;left:280px;top:300px}
+    91% {background-color:transparent;left: 320px;top:290px}
+    92% {background-color:white;left: 320px;top:280px}
+    98% {background-color:white;left:320px;top:190px}
+    99% {background-color:transparent;left:320px;top:150px}
+    100% {background-color:transparent;left:-6px;top:0px}
+}
+@keyframes mov_gas5{
+    0% {background-color:blue;left:-6px;top:0px}
+    40% {background-color:blue;left:254px;top:0px}
+    80% {background-color:blue;left:254px;top:265px}
+    90% {background-color:transparent;left:280px;top:300px}
+    91% {background-color:transparent;left: 328px;top:290px}
+    92% {background-color:white;left: 328px;top:280px}
+    98% {background-color:white;left:328px;top:190px}
+    99% {background-color:transparent;left:328px;top:150px}
+    100% {background-color:transparent;left:-6px;top:0px}
+}
+@keyframes mov_gas6{
+    0% {background-color:blue;left:-6px;top:0px}
+    40% {background-color:blue;left:254px;top:0px}
+    80% {background-color:blue;left:254px;top:265px}
+    90% {background-color:transparent;left:280px;top:300px}
+    91% {background-color:transparent;left: 336px;top:290px}
+    92% {background-color:white;left: 336px;top:280px}
+    98% {background-color:white;left:336px;top:190px}
+    99% {background-color:transparent;left:336px;top:150px}
+    100% {background-color:transparent;left:-6px;top:0px}
+}
+@keyframes mov_gas7{
+    0% {background-color:blue;left:-6px;top:0px}
+    40% {background-color:blue;left:254px;top:0px}
+    80% {background-color:blue;left:254px;top:265px}
+    90% {background-color:transparent;left:280px;top:300px}
+    91% {background-color:transparent;left: 344px;top:290px}
+    92% {background-color:white;left: 344px;top:280px}
+    98% {background-color:white;left:344px;top:190px}
+    99% {background-color:transparent;left:344px;top:150px}
+    100% {background-color:transparent;left:-6px;top:0px}
+}
+@keyframes mov_gas8{
+    0% {background-color:blue;left:-6px;top:0px}
+    40% {background-color:blue;left:254px;top:0px}
+    80% {background-color:blue;left:254px;top:265px}
+    90% {background-color:transparent;left:280px;top:300px}
+    91% {background-color:transparent;left: 352px;top:290px}
+    92% {background-color:white;left: 352px;top:280px}
+    98% {background-color:white;left:352px;top:190px}
+    99% {background-color:transparent;left:352px;top:150px}
+    100% {background-color:transparent;left:-6px;top:0px}
+}
+@keyframes mov_gas9{
+    0% {background-color:blue;left:-6px;top:0px}
+    40% {background-color:blue;left:254px;top:0px}
+    80% {background-color:blue;left:254px;top:265px}
+    90% {background-color:transparent;left:280px;top:300px}
+    91% {background-color:transparent;left: 360px;top:290px}
+    92% {background-color:white;left: 360px;top:280px}
+    98% {background-color:white;left:360px;top:190px}
+    99% {background-color:transparent;left:360px;top:150px}
+    100% {background-color:transparent;left:-6px;top:0px}
+}
+@keyframes mov_gas10{
+    0% {background-color:blue;left:-6px;top:0px}
+    40% {background-color:blue;left:254px;top:0px}
+    80% {background-color:blue;left:254px;top:265px}
+    90% {background-color:transparent;left:280px;top:300px}
+    91% {background-color:transparent;left: 368px;top:290px}
+    92% {background-color:white;left: 368px;top:280px}
+    98% {background-color:white;left:368px;top:190px}
+    99% {background-color:transparent;left:368px;top:150px}
+    100% {background-color:transparent;left:-6px;top:0px}
+}
+@keyframes mov_gas11{
+    0% {background-color:blue;left:-6px;top:0px}
+    40% {background-color:blue;left:254px;top:0px}
+    80% {background-color:blue;left:254px;top:265px}
+    90% {background-color:transparent;left:280px;top:300px}
+    91% {background-color:transparent;left: 372px;top:290px}
+    92% {background-color:white;left: 372px;top:280px}
+    98% {background-color:white;left:372px;top:190px}
+    99% {background-color:transparent;left:372px;top:150px}
+    100% {background-color:transparent;left:-6px;top:0px}
+}
+@keyframes mov_gas12{
+    0% {background-color:blue;left:-6px;top:0px}
+    40% {background-color:blue;left:254px;top:0px}
+    80% {background-color:blue;left:254px;top:265px}
+    90% {background-color:transparent;left:280px;top:300px}
+    91% {background-color:transparent;left: 380px;top:290px}
+    92% {background-color:white;left: 380px;top:280px}
+    98% {background-color:white;left:380px;top:190px}
+    99% {background-color:transparent;left:380px;top:150px}
+    100% {background-color:transparent;left:-6px;top:0px}
+}
+
 @keyframes mov_aguaf{
     0% {background-color:#12d9e7;left:0px;top:160px}
     20% {background-color:#12d9e7;left:0px;top:0px}
@@ -1616,12 +1739,130 @@ input{
     60% {background-color:#70ec76;left:0px;top:100px}
     100% {background-color:transparent;left:0px;top:200px}
 }
+
+@keyframes burbugear{
+    0% {background-color:white;top:0px}
+    50% {background-color:white;top:-75px}
+    100% {background-color:white;top:-130px}
+}
+
+.burbujas123{
+    background: white;
+    width: 6px;
+    height: 6px;
+    position: absolute;
+    left: 0px;
+    border-radius: 3px;
+}
+.burbujas123::before{
+    content: "";
+    background: white;
+    width: 6px;
+    height: 6px;
+    position: absolute;
+    left: 96px;
+    top: 0px;
+    border-radius: 3px;
+    
+}
+.burbujas123::after{
+    content: "";
+    background: white;
+    width: 6px;
+    height: 6px;
+    position: absolute;
+    left: 56px;
+    border-radius: 3px;
+}
+.burbujas456{
+    background: white;
+    width: 6px;
+    height: 6px;
+    position: absolute;
+    left: 8px;
+    border-radius: 3px;
+}
+.burbujas456::before{
+    content: "";
+    background: white;
+    width: 6px;
+    height: 6px;
+    position: absolute;
+    left: 80px;
+    border-radius: 3px;
+    
+}
+.burbujas456::after{
+    content: "";
+    background: white;
+    width: 6px;
+    height: 6px;
+    position: absolute;
+    left: 32px;
+    border-radius: 3px;
+}
+.burbujas789{
+    background: white;
+    width: 6px;
+    height: 6px;
+    position: absolute;
+    left: 16px;
+    border-radius: 3px;
+}
+.burbujas789::before{
+    content: "";
+    background: white;
+    width: 6px;
+    height: 6px;
+    position: absolute;
+    left: 24px;
+    border-radius: 3px;
+    
+}
+.burbujas789::after{
+    content: "";
+    background: white;
+    width: 6px;
+    height: 6px;
+    position: absolute;
+    left: 40px;
+    border-radius: 3px;
+}
+.burbujas101112{
+    background: white;
+    width: 6px;
+    height: 6px;
+    position: absolute;
+    left: 30px;
+    border-radius: 3px;
+}
+.burbujas101112::before{
+    content: "";
+    background: white;
+    width: 6px;
+    height: 6px;
+    position: absolute;
+    left: 38px;
+    border-radius: 3px;
+    
+}
+.burbujas101112::after{
+    content: "";
+    background: white;
+    width: 6px;
+    height: 6px;
+    position: absolute;
+    left: 52px;
+    border-radius: 3px;
+}
+
 .gas1{
     background: blue;
     width: 6px;
     height: 6px;
     position: absolute;
     left: -12px;
+    top: 24px;
     border-radius: 3px;
 }
 .gas2{

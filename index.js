@@ -136,21 +136,36 @@ function ir_pagina(num, tipo){
     }
 }
 
-
 function animacion_gas(){
     var vel_aire = parseFloat(document.getElementsByName('vel_aire')[0].value);
     
     var poy = 68-54*(vel_aire/400);
     indicador_rotometro.style.top=`${poy}px`;
     var ct=1;
+    var ct2=1
+    var n_gas=1;
     if (vel_aire>2){
-        let gases = setInterval(()=>{
-            var a = document.querySelector(`.gas${ct}`);
-            a.style.animation = `mov_gas ${vel_aire*2}s linear infinite`;
-            ct++;
-            if (ct==21){clearInterval(gases);}
-        },parseInt(vel_aire)*200)
+        let gases = ()=>{
+            if (ct<21){
+                var a = document.querySelector(`.gas${ct}`);
+                a.style.animation = `mov_gas${n_gas} ${vel_aire*2}s linear infinite`;
+                console.log(n_gas);
+                if (n_gas==12){n_gas}else{n_gas++;}
+                ct++;
+            } else{clearInterval(gases);}
+        }
+        let burbujas = ()=>{
+            if (ct>10 && ct2<5){
+                var a = document.querySelector(`.burbujas${ct2*3-2}${ct2*3-1}${ct2*3}`);
+                a.style.animation = `burbugear ${vel_aire/2}s linear infinite`;
+                console.log(`.burbujas${ct2*3-2}${ct2*3-1}${ct2*3}`);
+                ct2++;
+            } else{clearInterval(burbujas);}
+        }
+        setInterval(gases,parseInt(vel_aire)*200);
+        setInterval(burbujas,parseInt(vel_aire)*200);
     }
+
 }
 function animacion_agua(){
     var t_deseada = parseFloat(document.getElementsByName('t_deseada')[0].value);
@@ -194,7 +209,7 @@ function animacion_acido_base(){
             estado_ant = estado_ac; 
             var a = document.querySelector(`.acido1`);
             var b = document.querySelector(`.base2`);
-            a.style.animation = `mov_acido 2s linear infinite`;
+            a.style.animation = `mov_acido 3s linear infinite`;
             b.style.animation = `none`;
             ct++;
             if (ct==21){ct==1;}
