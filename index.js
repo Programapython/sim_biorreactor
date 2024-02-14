@@ -193,7 +193,7 @@ function animacion_agua(){
 }
 function animacion_acido_base(){
     var ph_deseado = parseFloat(document.getElementsByName('ph_deseado')[0].value);
-    document.getElementsByName('ph_medido')[0].value=ph_deseado;
+    document.getElementsByName('ph_medido')[0].value=5;
     var estado_ant = ph_deseado;
     var estado_ac = ph_deseado;
     var ct=1;

@@ -775,7 +775,7 @@ input{
     border-right: 2px solid black;
 }
 .agua{
-    background: #f36565;
+    background: #7a9ee0;
     width: 95px;
     height: 89px;
     position: absolute;
@@ -964,7 +964,7 @@ input{
 }
 .sensor_temperatura::before{
     content: "";
-    background: #f53a0b;
+    background: orange;
     width: 8px;
     height: 50px;
     position: absolute;
