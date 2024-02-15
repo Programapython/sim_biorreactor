@@ -194,41 +194,37 @@ function animacion_agua(){
 function animacion_acido_base(){
     var ph_deseado = parseFloat(document.getElementsByName('ph_deseado')[0].value);
     document.getElementsByName('ph_medido')[0].value=5;
-    var estado_ant = ph_deseado;
-    var estado_ac = ph_deseado;
-    var ct=1;
+    var caso = 0;
+    var estado_ac = 5;
     setInterval(()=>{
-        let estado = Math.random();
-        if (estado>0.5){
-            estado_ac = ph_deseado+(estado-0.5)*0.1;
-            if (Math.abs((estado-0.5)*0.1) > 0.03 ){
-                estado_ac=estado_ant+0.02;
-                console.log((estado-0.5)*0.1);
-            }
+        if (caso==1){
             document.getElementsByName('ph_medido')[0].value=estado_ac.toFixed(3);
-            estado_ant = estado_ac; 
+            ph_deseado = parseFloat(document.getElementsByName('ph_deseado')[0].value);
+        }
+        if (estado_ac>ph_deseado){
+            estado_ac = estado_ac-0.05;
             var a = document.querySelector(`.acido1`);
             var b = document.querySelector(`.base2`);
             a.style.animation = `mov_acido 3s linear infinite`;
             b.style.animation = `none`;
-            ct++;
-            if (ct==21){ct==1;}
-        } else if (estado<0.5){
-            estado_ac = ph_deseado+(estado-0.5)*0.1;
-            if (Math.abs((estado-0.5)*0.1)>0.03){
-                estado_ac=estado_ant-0.02;
-                console.log((estado-0.5)*0.1);
-            }
-            document.getElementsByName('ph_medido')[0].value=estado_ac.toFixed(3);
-            estado_ant = estado_ac;
+            console.log("mayor");
+        } else if (estado_ac<ph_deseado){
+            estado_ac = estado_ac+0.05;
             var a = document.querySelector(`.acido1`);
             var b = document.querySelector(`.base2`);
             a.style.animation = `none`;
             b.style.animation = `mov_base 5s linear infinite`;
+            console.log("menor");
         } else {
+            var a = document.querySelector(`.acido1`);
+            var b = document.querySelector(`.base2`);
+            a.style.animation = `none`;
+            b.style.animation = `none`;
+            estado_ac = estado_ac-0.01;
             console.log("el estado es correcto");
         }
-    },5000)
+        caso=1;
+    },4000)
 }
 function animacion_antiespuma(){
     setInterval(()=>{
